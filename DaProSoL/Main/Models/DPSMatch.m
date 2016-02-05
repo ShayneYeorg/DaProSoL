@@ -226,8 +226,8 @@
         goal.isHomeTeam = YES;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;
-        goal.asisPlayerNum = passer.num;
-        goal.asisPlayer = passer.name;
+        goal.assisPlayerNum = passer.num;
+        goal.assisPlayer = passer.name;
         goal.time = [self goalTime];
         [self.matchResult.goals addObject:goal];
         
@@ -237,8 +237,8 @@
         goal.isHomeTeam = NO;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;
-        goal.asisPlayerNum = passer.num;
-        goal.asisPlayer = passer.name;
+        goal.assisPlayerNum = passer.num;
+        goal.assisPlayer = passer.name;
         goal.time = [self goalTime];
         [self.matchResult.goals addObject:goal];
     }

@@ -13,13 +13,13 @@
 		34B3277C1C6477F70097617B /* DPShirt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276D1C6477F70097617B /* DPShirt.m */; };
 		34B3277D1C6477F70097617B /* DPSTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276F1C6477F70097617B /* DPSTestData.m */; };
 		34B3277E1C6477F70097617B /* DPSProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327721C6477F70097617B /* DPSProbability.m */; };
-		34B327811C64781B0097617B /* DPSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327801C64781B0097617B /* DPSClub.m */; };
 		34B327831C6478B60097617B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B327821C6478B60097617B /* Info.plist */; };
 		34B3278E1C647BF80097617B /* DPSGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327851C647BF80097617B /* DPSGoal.m */; };
 		34B3278F1C647BF80097617B /* DPSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327871C647BF80097617B /* DPSMatch.m */; };
 		34B327901C647BF80097617B /* DPSMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327891C647BF80097617B /* DPSMatchResult.m */; };
 		34B327911C647BF80097617B /* DPSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3278B1C647BF80097617B /* DPSPlayer.m */; };
 		34B327921C647BF80097617B /* DPSPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3278D1C647BF80097617B /* DPSPlayerName.m */; };
+		34E779F71C64E89900C3681D /* DPSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E779F61C64E89900C3681D /* DPSClub.m */; };
 		34FFC63E1B871E7C0029E141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63C1B871E7C0029E141 /* Main.storyboard */; };
 		34FFC6401B871E7C0029E141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63F1B871E7C0029E141 /* Images.xcassets */; };
 		34FFC6431B871E7C0029E141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC6411B871E7C0029E141 /* LaunchScreen.xib */; };
@@ -50,8 +50,6 @@
 		34B3276F1C6477F70097617B /* DPSTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSTestData.m; sourceTree = "<group>"; };
 		34B327711C6477F70097617B /* DPSProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSProbability.h; sourceTree = "<group>"; };
 		34B327721C6477F70097617B /* DPSProbability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSProbability.m; sourceTree = "<group>"; };
-		34B3277F1C64781B0097617B /* DPSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSClub.h; sourceTree = "<group>"; };
-		34B327801C64781B0097617B /* DPSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSClub.m; sourceTree = "<group>"; };
 		34B327821C6478B60097617B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B327841C647BF80097617B /* DPSGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSGoal.h; sourceTree = "<group>"; };
 		34B327851C647BF80097617B /* DPSGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSGoal.m; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		34B3278B1C647BF80097617B /* DPSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayer.m; sourceTree = "<group>"; };
 		34B3278C1C647BF80097617B /* DPSPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSPlayerName.h; sourceTree = "<group>"; };
 		34B3278D1C647BF80097617B /* DPSPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayerName.m; sourceTree = "<group>"; };
+		34E779F51C64E89900C3681D /* DPSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSClub.h; sourceTree = "<group>"; };
+		34E779F61C64E89900C3681D /* DPSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSClub.m; sourceTree = "<group>"; };
 		34FFC62F1B871E7C0029E141 /* DaProSoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaProSoL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC63D1B871E7C0029E141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FFC63F1B871E7C0029E141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				34B3278B1C647BF80097617B /* DPSPlayer.m */,
 				34B3278C1C647BF80097617B /* DPSPlayerName.h */,
 				34B3278D1C647BF80097617B /* DPSPlayerName.m */,
-				34B3277F1C64781B0097617B /* DPSClub.h */,
-				34B327801C64781B0097617B /* DPSClub.m */,
+				34E779F51C64E89900C3681D /* DPSClub.h */,
+				34E779F61C64E89900C3681D /* DPSClub.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,11 +315,11 @@
 				34B327741C6477F70097617B /* main.m in Sources */,
 				34B3277C1C6477F70097617B /* DPShirt.m in Sources */,
 				34B3277D1C6477F70097617B /* DPSTestData.m in Sources */,
-				34B327811C64781B0097617B /* DPSClub.m in Sources */,
 				34B327911C647BF80097617B /* DPSPlayer.m in Sources */,
 				34B327921C647BF80097617B /* DPSPlayerName.m in Sources */,
 				34B327731C6477F70097617B /* AppDelegate.m in Sources */,
 				34B3278E1C647BF80097617B /* DPSGoal.m in Sources */,
+				34E779F71C64E89900C3681D /* DPSClub.m in Sources */,
 				34B327901C647BF80097617B /* DPSMatchResult.m in Sources */,
 				34B3277E1C6477F70097617B /* DPSProbability.m in Sources */,
 			);

@@ -13,8 +13,8 @@
 @property (nonatomic, assign) BOOL isHomeTeam;
 @property (nonatomic, assign) NSString *scorePlayerNum;
 @property (nonatomic, copy) NSString *scorePlayer;
-@property (nonatomic, assign) NSString *asisPlayerNum;
-@property (nonatomic, copy) NSString *asisPlayer;
+@property (nonatomic, assign) NSString *assisPlayerNum;
+@property (nonatomic, copy) NSString *assisPlayer;
 @property (nonatomic, assign) NSString *time;
 
 @end
