@@ -1,5 +1,5 @@
 //
-//  DPScore.m
+//  DPSGoal.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/9/2.
