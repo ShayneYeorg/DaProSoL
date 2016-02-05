@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  DaProSoL
+//
+//  Created by 杨淳引 on 15/8/21.
+//  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
+//
+
+#ifndef DaProSoL_PrefixHeader_pch
+#define DaProSoL_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define DPSLog(format, ...) NSLog( @"<%@:(%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(format),  ##__VA_ARGS__] )
+#else
+#define DPSLog(format, ...)
+#endif
+
+#endif
+
+
+//color
+#define RGB(r, g, b) [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
