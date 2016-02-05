@@ -7,7 +7,7 @@
 //
 
 #import "DPMatch.h"
-#import "DPProbability.h"
+#import "DPSProbability.h"
 
 @interface DPMatch ()
 
@@ -17,7 +17,7 @@
 
 @implementation DPMatch
 
-- (DPMatchResult *)match:(DPClub *)homeTeam against:(DPClub *)awayTeam {
+- (DPMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam {
     self.matchResult = [[DPMatchResult alloc]init];
     self.matchResult.homeTeam = homeTeam;
     self.matchResult.awayTeam = awayTeam;
@@ -123,10 +123,10 @@
     [self playerAttack:self.matchResult.awayTeam.forward2 passedBy:nil inTeam:self.matchResult.awayTeam against:self.matchResult.homeTeam chances:awayCreateFor2];
 }
 
-- (void)playerAttack:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPClub *)team against:(DPClub *)againstTeam chances:(NSInteger)chances {
+- (void)playerAttack:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team against:(DPSClub *)againstTeam chances:(NSInteger)chances {
     for (int i=0; i<chances; i++) {
         player.touches += 1;
-        if (player.aggressive >= [DPProbability probability]) {
+        if (player.aggressive >= [DPSProbability probability]) {
             //shoot
             player.shoots += 1;
             againstTeam.goalKeeper.saves += 1;
@@ -177,7 +177,7 @@
     }
 }
 
-- (void)player:(DPPlayer *)player inTeam:(DPClub *)team passAgainstDefender:(DPPlayer *)defender inTeam:(DPClub *)againstTeam {
+- (void)player:(DPPlayer *)player inTeam:(DPSClub *)team passAgainstDefender:(DPPlayer *)defender inTeam:(DPSClub *)againstTeam {
     if([player pass]) {
         player.passeSuccess += 1;
         [self playerAttack:[team randomGetAPlayerKeepTheBallFrom:player] passedBy:player inTeam:team against:againstTeam chances:1];
@@ -187,7 +187,7 @@
     }
 }
 
-- (void)defender:(DPPlayer *)defender inTeam:(DPClub *)team defendAgainstPasser:(DPPlayer *)player inTeam:(DPClub *)againstTeam {
+- (void)defender:(DPPlayer *)defender inTeam:(DPSClub *)team defendAgainstPasser:(DPPlayer *)player inTeam:(DPSClub *)againstTeam {
     if([player defend]) {
         defender.tackleSuccess += 1;
         
@@ -197,7 +197,7 @@
     }
 }
 
-- (void)player:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPClub *)team shootAgainstGoalKeeper:(DPPlayer *)goalKeeper {
+- (void)player:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team shootAgainstGoalKeeper:(DPPlayer *)goalKeeper {
     if([player shoot]) {
         player.goals += 1;
         passer.asists += 1;
@@ -208,7 +208,7 @@
     }
 }
 
-- (void)goalKeeper:(DPPlayer *)goalKeeper saveAgainstPlayer:(DPPlayer *)player passer:(DPPlayer *)passer inTeam:(DPClub *)team {
+- (void)goalKeeper:(DPPlayer *)goalKeeper saveAgainstPlayer:(DPPlayer *)player passer:(DPPlayer *)passer inTeam:(DPSClub *)team {
     if ([goalKeeper save]) {
         goalKeeper.saveSuccess += 1;
         
@@ -219,7 +219,7 @@
     }
 }
 
-- (void)goalBy:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPClub *)team {
+- (void)goalBy:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team {
     if (team == self.matchResult.homeTeam) {
         self.matchResult.homeScore += 1;
         DPGoal *goal = [[DPGoal alloc]init];
@@ -245,7 +245,7 @@
 }
 
 - (NSString *)goalTime {
-    NSInteger min = [DPProbability probability0to:95];
+    NSInteger min = [DPSProbability probability0to:95];
     if (min == 0) {
         return @"45'+";
     } else if (min > 90 && min <= 92) {

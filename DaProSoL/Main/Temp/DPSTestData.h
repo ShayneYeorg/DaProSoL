@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPClub.h"
+#import "DPSClub.h"
 
 @interface DPSTestData : NSObject
 
-+ (DPClub *)getStrongTeam:(NSString *)teamName;
-+ (DPClub *)getMediumTeam:(NSString *)teamName;
-+ (DPClub *)getWeakTeam:(NSString *)teamName;
++ (DPSClub *)getStrongTeam:(NSString *)teamName;
++ (DPSClub *)getMediumTeam:(NSString *)teamName;
++ (DPSClub *)getWeakTeam:(NSString *)teamName;
 
 @end

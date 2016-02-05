@@ -1,5 +1,5 @@
 //
-//  DPClub.h
+//  DPSClub.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DPPlayer.h"
 
-@interface DPClub : NSObject
+@interface DPSClub : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) DPPlayer *goalKeeper;

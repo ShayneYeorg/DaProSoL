@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "DPMatchResult.h"
-#import "DPClub.h"
+#import "DPSClub.h"
 
 @interface DPMatch : NSObject
 
-- (DPMatchResult *)match:(DPClub *)homeTeam against:(DPClub *)awayTeam;
+- (DPMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam;
 
 @end

@@ -1,14 +1,14 @@
 //
-//  DPProbability.m
+//  DPSProbability.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPProbability.h"
+#import "DPSProbability.h"
 
-@implementation DPProbability
+@implementation DPSProbability
 
 + (NSInteger)probability {
     return (arc4random()%100);

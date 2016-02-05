@@ -7,7 +7,7 @@
 //
 
 #import "DPPlayer.h"
-#import "DPProbability.h"
+#import "DPSProbability.h"
 
 @interface DPPlayer ()
 
@@ -36,28 +36,28 @@
 }
 
 - (BOOL)shoot {
-    if (self.shootAbility >= [DPProbability probability]) {
+    if (self.shootAbility >= [DPSProbability probability]) {
         return YES;
     }
     return NO;
 }
 
 - (BOOL)pass {
-    if (self.passAbility >= [DPProbability probability]) {
+    if (self.passAbility >= [DPSProbability probability]) {
         return YES;
     }
     return NO;
 }
 
 - (BOOL)defend {
-    if (self.defendAbility >= [DPProbability probability]) {
+    if (self.defendAbility >= [DPSProbability probability]) {
         return YES;
     }
     return NO;
 }
 
 - (BOOL)save {
-    if (self.saveAbility >= [DPProbability probability]) {
+    if (self.saveAbility >= [DPSProbability probability]) {
         return YES;
     }
     return NO;

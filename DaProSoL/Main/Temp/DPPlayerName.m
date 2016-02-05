@@ -7,7 +7,7 @@
 //
 
 #import "DPPlayerName.h"
-#import "DPProbability.h"
+#import "DPSProbability.h"
 
 @interface DPPlayerName ()
 
@@ -28,13 +28,13 @@ static id _instance;
     for (int i = 0; i < nameStyleStr.length; i++) {
         NSString *wordToken = [nameStyleStr substringWithRange: NSMakeRange(i,1)];
         if ([wordToken isEqualToString:@"Z"]) {
-            [returnName appendString:self.commonKeynotes[[DPProbability probability0to:self.commonKeynotes.count]]];
+            [returnName appendString:self.commonKeynotes[[DPSProbability probability0to:self.commonKeynotes.count]]];
             
         } else if ([wordToken isEqualToString:@"S"]) {
-            [returnName appendString:self.commonConsonants[[DPProbability probability0to:self.commonConsonants.count]]];
+            [returnName appendString:self.commonConsonants[[DPSProbability probability0to:self.commonConsonants.count]]];
             
         } else if ([wordToken isEqualToString:@"s"]) {
-            [returnName appendString:self.specialConsonants[[DPProbability probability0to:self.specialConsonants.count]]];
+            [returnName appendString:self.specialConsonants[[DPSProbability probability0to:self.specialConsonants.count]]];
         }
     }
     
@@ -70,7 +70,7 @@ static id _instance;
 #pragma mark - Private
 
 - (NSString *)nameStyleString {
-    NSInteger prob = [DPProbability probability0To110];
+    NSInteger prob = [DPSProbability probability0To110];
     if (prob < 6) {
         return @"ZS";
     } else if (prob < 12) {

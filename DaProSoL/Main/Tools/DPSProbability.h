@@ -1,5 +1,5 @@
 //
-//  DPProbability.h
+//  DPSProbability.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DPProbability : NSObject
+@interface DPSProbability : NSObject
 
 + (NSInteger)probability;
 

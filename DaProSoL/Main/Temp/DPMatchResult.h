@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "DPGoal.h"
-#import "DPClub.h"
+#import "DPSClub.h"
 
 @interface DPMatchResult : NSObject
 
-@property (nonatomic, strong) DPClub *homeTeam;
-@property (nonatomic, strong) DPClub *awayTeam;
+@property (nonatomic, strong) DPSClub *homeTeam;
+@property (nonatomic, strong) DPSClub *awayTeam;
 @property (nonatomic, assign) NSInteger homeScore;
 @property (nonatomic, assign) NSInteger awayScore;
 @property (nonatomic, strong) NSMutableArray *goals;

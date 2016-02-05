@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34B1E6921C646BD900168D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E67B1C646BD900168D0D /* AppDelegate.m */; };
-		34B1E6931C646BD900168D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E67C1C646BD900168D0D /* main.m */; };
-		34B1E6941C646BD900168D0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E67E1C646BD900168D0D /* ViewController.m */; };
-		34B1E6951C646BD900168D0D /* DPClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6811C646BD900168D0D /* DPClub.m */; };
-		34B1E6961C646BD900168D0D /* DPGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6831C646BD900168D0D /* DPGoal.m */; };
-		34B1E6971C646BD900168D0D /* DPMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6851C646BD900168D0D /* DPMatch.m */; };
-		34B1E6981C646BD900168D0D /* DPMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6871C646BD900168D0D /* DPMatchResult.m */; };
-		34B1E6991C646BD900168D0D /* DPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6891C646BD900168D0D /* DPPlayer.m */; };
-		34B1E69A1C646BD900168D0D /* DPPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E68B1C646BD900168D0D /* DPPlayerName.m */; };
-		34B1E69B1C646BD900168D0D /* DPProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E68D1C646BD900168D0D /* DPProbability.m */; };
-		34B1E69C1C646BD900168D0D /* DPShirt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E68F1C646BD900168D0D /* DPShirt.m */; };
-		34B1E69D1C646BD900168D0D /* DPSTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B1E6911C646BD900168D0D /* DPSTestData.m */; };
+		34B327731C6477F70097617B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327591C6477F70097617B /* AppDelegate.m */; };
+		34B327741C6477F70097617B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3275B1C6477F70097617B /* main.m */; };
+		34B327751C6477F70097617B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3275D1C6477F70097617B /* ViewController.m */; };
+		34B327761C6477F70097617B /* DPGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327611C6477F70097617B /* DPGoal.m */; };
+		34B327771C6477F70097617B /* DPMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327631C6477F70097617B /* DPMatch.m */; };
+		34B327781C6477F70097617B /* DPMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327651C6477F70097617B /* DPMatchResult.m */; };
+		34B327791C6477F70097617B /* DPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327671C6477F70097617B /* DPPlayer.m */; };
+		34B3277A1C6477F70097617B /* DPPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327691C6477F70097617B /* DPPlayerName.m */; };
+		34B3277C1C6477F70097617B /* DPShirt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276D1C6477F70097617B /* DPShirt.m */; };
+		34B3277D1C6477F70097617B /* DPSTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276F1C6477F70097617B /* DPSTestData.m */; };
+		34B3277E1C6477F70097617B /* DPSProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327721C6477F70097617B /* DPSProbability.m */; };
+		34B327811C64781B0097617B /* DPSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327801C64781B0097617B /* DPSClub.m */; };
+		34B327831C6478B60097617B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B327821C6478B60097617B /* Info.plist */; };
 		34FFC63E1B871E7C0029E141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63C1B871E7C0029E141 /* Main.storyboard */; };
 		34FFC6401B871E7C0029E141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63F1B871E7C0029E141 /* Images.xcassets */; };
 		34FFC6431B871E7C0029E141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC6411B871E7C0029E141 /* LaunchScreen.xib */; };
@@ -36,38 +37,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34B1E67A1C646BD900168D0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		34B1E67B1C646BD900168D0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34B1E67C1C646BD900168D0D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34B1E67D1C646BD900168D0D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		34B1E67E1C646BD900168D0D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		34B1E6801C646BD900168D0D /* DPClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPClub.h; sourceTree = "<group>"; };
-		34B1E6811C646BD900168D0D /* DPClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPClub.m; sourceTree = "<group>"; };
-		34B1E6821C646BD900168D0D /* DPGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGoal.h; sourceTree = "<group>"; };
-		34B1E6831C646BD900168D0D /* DPGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGoal.m; sourceTree = "<group>"; };
-		34B1E6841C646BD900168D0D /* DPMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatch.h; sourceTree = "<group>"; };
-		34B1E6851C646BD900168D0D /* DPMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatch.m; sourceTree = "<group>"; };
-		34B1E6861C646BD900168D0D /* DPMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatchResult.h; sourceTree = "<group>"; };
-		34B1E6871C646BD900168D0D /* DPMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatchResult.m; sourceTree = "<group>"; };
-		34B1E6881C646BD900168D0D /* DPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayer.h; sourceTree = "<group>"; };
-		34B1E6891C646BD900168D0D /* DPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayer.m; sourceTree = "<group>"; };
-		34B1E68A1C646BD900168D0D /* DPPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayerName.h; sourceTree = "<group>"; };
-		34B1E68B1C646BD900168D0D /* DPPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayerName.m; sourceTree = "<group>"; };
-		34B1E68C1C646BD900168D0D /* DPProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPProbability.h; sourceTree = "<group>"; };
-		34B1E68D1C646BD900168D0D /* DPProbability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPProbability.m; sourceTree = "<group>"; };
-		34B1E68E1C646BD900168D0D /* DPShirt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShirt.h; sourceTree = "<group>"; };
-		34B1E68F1C646BD900168D0D /* DPShirt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShirt.m; sourceTree = "<group>"; };
-		34B1E6901C646BD900168D0D /* DPSTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSTestData.h; sourceTree = "<group>"; };
-		34B1E6911C646BD900168D0D /* DPSTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSTestData.m; sourceTree = "<group>"; };
+		34B327541C6477E40097617B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = Other/PrefixHeader.pch; sourceTree = "<group>"; };
+		34B327581C6477F70097617B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34B327591C6477F70097617B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34B3275A1C6477F70097617B /* DPSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSConstant.h; sourceTree = "<group>"; };
+		34B3275B1C6477F70097617B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34B3275C1C6477F70097617B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34B3275D1C6477F70097617B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34B327601C6477F70097617B /* DPGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGoal.h; sourceTree = "<group>"; };
+		34B327611C6477F70097617B /* DPGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGoal.m; sourceTree = "<group>"; };
+		34B327621C6477F70097617B /* DPMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatch.h; sourceTree = "<group>"; };
+		34B327631C6477F70097617B /* DPMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatch.m; sourceTree = "<group>"; };
+		34B327641C6477F70097617B /* DPMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatchResult.h; sourceTree = "<group>"; };
+		34B327651C6477F70097617B /* DPMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatchResult.m; sourceTree = "<group>"; };
+		34B327661C6477F70097617B /* DPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayer.h; sourceTree = "<group>"; };
+		34B327671C6477F70097617B /* DPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayer.m; sourceTree = "<group>"; };
+		34B327681C6477F70097617B /* DPPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayerName.h; sourceTree = "<group>"; };
+		34B327691C6477F70097617B /* DPPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayerName.m; sourceTree = "<group>"; };
+		34B3276C1C6477F70097617B /* DPShirt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShirt.h; sourceTree = "<group>"; };
+		34B3276D1C6477F70097617B /* DPShirt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShirt.m; sourceTree = "<group>"; };
+		34B3276E1C6477F70097617B /* DPSTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSTestData.h; sourceTree = "<group>"; };
+		34B3276F1C6477F70097617B /* DPSTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSTestData.m; sourceTree = "<group>"; };
+		34B327711C6477F70097617B /* DPSProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSProbability.h; sourceTree = "<group>"; };
+		34B327721C6477F70097617B /* DPSProbability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSProbability.m; sourceTree = "<group>"; };
+		34B3277F1C64781B0097617B /* DPSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSClub.h; sourceTree = "<group>"; };
+		34B327801C64781B0097617B /* DPSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSClub.m; sourceTree = "<group>"; };
+		34B327821C6478B60097617B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FFC62F1B871E7C0029E141 /* DaProSoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaProSoL.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		34FFC6331B871E7C0029E141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FFC63D1B871E7C0029E141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FFC63F1B871E7C0029E141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		34FFC6421B871E7C0029E141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		34FFC6481B871E7C0029E141 /* DaProSoLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaProSoLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC64D1B871E7C0029E141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FFC64E1B871E7C0029E141 /* DaProSoLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaProSoLTests.m; sourceTree = "<group>"; };
-		34FFC65F1B872D790029E141 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,41 +90,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		34B1E6791C646BD900168D0D /* Main */ = {
+		34B327561C6477F70097617B /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				34B1E67A1C646BD900168D0D /* AppDelegate.h */,
-				34B1E67B1C646BD900168D0D /* AppDelegate.m */,
-				34B1E67C1C646BD900168D0D /* main.m */,
-				34B1E67D1C646BD900168D0D /* ViewController.h */,
-				34B1E67E1C646BD900168D0D /* ViewController.m */,
+				34B327571C6477F70097617B /* Main */,
+				34B3275E1C6477F70097617B /* Models */,
+				34B3275F1C6477F70097617B /* Temp */,
+				34B327701C6477F70097617B /* Tools */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		34B1E67F1C646BD900168D0D /* Temp */ = {
+		34B327571C6477F70097617B /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				34B1E6801C646BD900168D0D /* DPClub.h */,
-				34B1E6811C646BD900168D0D /* DPClub.m */,
-				34B1E6821C646BD900168D0D /* DPGoal.h */,
-				34B1E6831C646BD900168D0D /* DPGoal.m */,
-				34B1E6841C646BD900168D0D /* DPMatch.h */,
-				34B1E6851C646BD900168D0D /* DPMatch.m */,
-				34B1E6861C646BD900168D0D /* DPMatchResult.h */,
-				34B1E6871C646BD900168D0D /* DPMatchResult.m */,
-				34B1E6881C646BD900168D0D /* DPPlayer.h */,
-				34B1E6891C646BD900168D0D /* DPPlayer.m */,
-				34B1E68A1C646BD900168D0D /* DPPlayerName.h */,
-				34B1E68B1C646BD900168D0D /* DPPlayerName.m */,
-				34B1E68C1C646BD900168D0D /* DPProbability.h */,
-				34B1E68D1C646BD900168D0D /* DPProbability.m */,
-				34B1E68E1C646BD900168D0D /* DPShirt.h */,
-				34B1E68F1C646BD900168D0D /* DPShirt.m */,
-				34B1E6901C646BD900168D0D /* DPSTestData.h */,
-				34B1E6911C646BD900168D0D /* DPSTestData.m */,
+				34B3275B1C6477F70097617B /* main.m */,
+				34B327581C6477F70097617B /* AppDelegate.h */,
+				34B327591C6477F70097617B /* AppDelegate.m */,
+				34B3275C1C6477F70097617B /* ViewController.h */,
+				34B3275D1C6477F70097617B /* ViewController.m */,
+				34B3275A1C6477F70097617B /* DPSConstant.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		34B3275E1C6477F70097617B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34B3277F1C64781B0097617B /* DPSClub.h */,
+				34B327801C64781B0097617B /* DPSClub.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34B3275F1C6477F70097617B /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				34B327601C6477F70097617B /* DPGoal.h */,
+				34B327611C6477F70097617B /* DPGoal.m */,
+				34B327621C6477F70097617B /* DPMatch.h */,
+				34B327631C6477F70097617B /* DPMatch.m */,
+				34B327641C6477F70097617B /* DPMatchResult.h */,
+				34B327651C6477F70097617B /* DPMatchResult.m */,
+				34B327661C6477F70097617B /* DPPlayer.h */,
+				34B327671C6477F70097617B /* DPPlayer.m */,
+				34B327681C6477F70097617B /* DPPlayerName.h */,
+				34B327691C6477F70097617B /* DPPlayerName.m */,
+				34B3276C1C6477F70097617B /* DPShirt.h */,
+				34B3276D1C6477F70097617B /* DPShirt.m */,
+				34B3276E1C6477F70097617B /* DPSTestData.h */,
+				34B3276F1C6477F70097617B /* DPSTestData.m */,
 			);
 			path = Temp;
+			sourceTree = "<group>";
+		};
+		34B327701C6477F70097617B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				34B327711C6477F70097617B /* DPSProbability.h */,
+				34B327721C6477F70097617B /* DPSProbability.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		34FFC6261B871E7C0029E141 = {
@@ -146,8 +174,7 @@
 		34FFC6311B871E7C0029E141 /* DaProSoL */ = {
 			isa = PBXGroup;
 			children = (
-				34B1E6791C646BD900168D0D /* Main */,
-				34B1E67F1C646BD900168D0D /* Temp */,
+				34B327561C6477F70097617B /* Main */,
 				34FFC6321B871E7C0029E141 /* Supporting Files */,
 			);
 			path = DaProSoL;
@@ -159,8 +186,8 @@
 				34FFC63C1B871E7C0029E141 /* Main.storyboard */,
 				34FFC63F1B871E7C0029E141 /* Images.xcassets */,
 				34FFC6411B871E7C0029E141 /* LaunchScreen.xib */,
-				34FFC6331B871E7C0029E141 /* Info.plist */,
-				34FFC65F1B872D790029E141 /* PrefixHeader.pch */,
+				34B327821C6478B60097617B /* Info.plist */,
+				34B327541C6477E40097617B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B327831C6478B60097617B /* Info.plist in Resources */,
 				34FFC63E1B871E7C0029E141 /* Main.storyboard in Resources */,
 				34FFC6431B871E7C0029E141 /* LaunchScreen.xib in Resources */,
 				34FFC6401B871E7C0029E141 /* Images.xcassets in Resources */,
@@ -282,18 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B1E6941C646BD900168D0D /* ViewController.m in Sources */,
-				34B1E69D1C646BD900168D0D /* DPSTestData.m in Sources */,
-				34B1E69B1C646BD900168D0D /* DPProbability.m in Sources */,
-				34B1E6951C646BD900168D0D /* DPClub.m in Sources */,
-				34B1E69A1C646BD900168D0D /* DPPlayerName.m in Sources */,
-				34B1E6961C646BD900168D0D /* DPGoal.m in Sources */,
-				34B1E6971C646BD900168D0D /* DPMatch.m in Sources */,
-				34B1E6981C646BD900168D0D /* DPMatchResult.m in Sources */,
-				34B1E6931C646BD900168D0D /* main.m in Sources */,
-				34B1E69C1C646BD900168D0D /* DPShirt.m in Sources */,
-				34B1E6991C646BD900168D0D /* DPPlayer.m in Sources */,
-				34B1E6921C646BD900168D0D /* AppDelegate.m in Sources */,
+				34B327751C6477F70097617B /* ViewController.m in Sources */,
+				34B327741C6477F70097617B /* main.m in Sources */,
+				34B327781C6477F70097617B /* DPMatchResult.m in Sources */,
+				34B3277C1C6477F70097617B /* DPShirt.m in Sources */,
+				34B3277D1C6477F70097617B /* DPSTestData.m in Sources */,
+				34B3277A1C6477F70097617B /* DPPlayerName.m in Sources */,
+				34B327761C6477F70097617B /* DPGoal.m in Sources */,
+				34B327771C6477F70097617B /* DPMatch.m in Sources */,
+				34B327791C6477F70097617B /* DPPlayer.m in Sources */,
+				34B327811C64781B0097617B /* DPSClub.m in Sources */,
+				34B327731C6477F70097617B /* AppDelegate.m in Sources */,
+				34B3277E1C6477F70097617B /* DPSProbability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/DaProSoL/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DaProSoL/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DaProSoL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/DaProSoL/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DaProSoL/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = DaProSoL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

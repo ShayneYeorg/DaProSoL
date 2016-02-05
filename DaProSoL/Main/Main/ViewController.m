@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "DPProbability.h"
+#import "DPSProbability.h"
 #import "DPMatch.h"
 #import "DPPlayerName.h"
 #import "DPShirt.h"
@@ -25,8 +25,8 @@
     
     
 //    for (int n=0; n<10; n++) {
-        DPClub *ManU = [DPSTestData getStrongTeam:@"ManU"];
-        DPClub *Barca = [DPSTestData getStrongTeam:@"Liv"];
+        DPSClub *ManU = [DPSTestData getStrongTeam:@"ManU"];
+        DPSClub *Barca = [DPSTestData getStrongTeam:@"Liv"];
         DPMatch *m = [[DPMatch alloc]init];
         DPMatchResult *matchResult = [m match:ManU against:Barca];
         DPSLog(@"%@", matchResult);

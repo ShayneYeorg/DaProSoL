@@ -19,7 +19,7 @@
 
 @implementation DPSTestData
 
-+ (DPClub *)getStrongTeam:(NSString *)teamName {
++ (DPSClub *)getStrongTeam:(NSString *)teamName {
     
     DPPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"GK" num:@"1"];
     
@@ -43,7 +43,7 @@
     
     DPPlayer *Forward2 = [DPSTestData getStrongForward:@"F2" num:@"11"];
     
-    DPClub *team = [[DPClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
+    DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       teamName,@"name",
                                                       GoalKeeper,@"goalKeeper",
                                                       Defender1,@"defender1",
@@ -61,7 +61,7 @@
     return team;
 }
 
-+ (DPClub *)getMediumTeam:(NSString *)teamName {
++ (DPSClub *)getMediumTeam:(NSString *)teamName {
     
     DPPlayer *GoalKeeper = [DPSTestData getMediumGoalKeeper:@"GK" num:@"1"];
     
@@ -85,7 +85,7 @@
     
     DPPlayer *Forward2 = [DPSTestData getMediumForward:@"F2" num:@"11"];
     
-    DPClub *team = [[DPClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
+    DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                             teamName,@"name",
                                                             GoalKeeper,@"goalKeeper",
                                                             Defender1,@"defender1",
@@ -103,7 +103,7 @@
     return team;
 }
 
-+ (DPClub *)getWeakTeam:(NSString *)teamName {
++ (DPSClub *)getWeakTeam:(NSString *)teamName {
     
     DPPlayer *GoalKeeper = [DPSTestData getWeakGoalKeeper:@"GK" num:@"1"];
     
@@ -127,7 +127,7 @@
     
     DPPlayer *Forward2 = [DPSTestData getWeakForward:@"F2" num:@"11"];
     
-    DPClub *team = [[DPClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
+    DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       teamName,@"name",
                                                       GoalKeeper,@"goalKeeper",
                                                       Defender1,@"defender1",

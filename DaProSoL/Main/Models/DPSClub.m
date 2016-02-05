@@ -1,15 +1,15 @@
 //
-//  DPClub.m
+//  DPSClub.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPClub.h"
-#import "DPProbability.h"
+#import "DPSClub.h"
+#import "DPSProbability.h"
 
-@implementation DPClub
+@implementation DPSClub
 
 - (instancetype)initWithPlayerDict:(NSDictionary *)dict {
     self = [super init];
@@ -36,7 +36,7 @@
 
 - (DPPlayer *)randomGetAPlayerAgainstGoalKeeper {
     DPPlayer *player;
-    NSInteger pb = [DPProbability probability];
+    NSInteger pb = [DPSProbability probability];
     if (pb < 80) {
         player = [self randomGetAForward];
     } else if (pb < 90) {
@@ -49,7 +49,7 @@
 
 - (DPPlayer *)randomGetAPlayerAgainstDefender {
     DPPlayer *player;
-    NSInteger pb = [DPProbability probability];
+    NSInteger pb = [DPSProbability probability];
     if (pb < 70) {
         player = [self randomGetAMidfielder];
     } else if (pb < 80) {
@@ -62,7 +62,7 @@
 
 - (DPPlayer *)randomGetAPlayerAgainstMidfielder {
     DPPlayer *player;
-    NSInteger pb = [DPProbability probability];
+    NSInteger pb = [DPSProbability probability];
     if (pb < 70) {
         player = [self randomGetADefender];
     } else if (pb < 90) {
@@ -75,7 +75,7 @@
 
 - (DPPlayer *)randomGetAPlayerAgainstForward {
     DPPlayer *player;
-    NSInteger pb = [DPProbability probability];
+    NSInteger pb = [DPSProbability probability];
     if (pb < 70) {
         player = [self randomGetADefender];
     } else if (pb < 95) {
@@ -87,7 +87,7 @@
 }
 
 - (DPPlayer *)randomGetADefender {
-    NSInteger num = [DPProbability probability0to:3];
+    NSInteger num = [DPSProbability probability0to:3];
     DPPlayer *player = [[DPPlayer alloc]init];
     switch (num) {
         case 0:
@@ -110,7 +110,7 @@
 }
 
 - (DPPlayer *)randomGetAMidfielder {
-    NSInteger num = [DPProbability probability0to:3];
+    NSInteger num = [DPSProbability probability0to:3];
     DPPlayer *player = [[DPPlayer alloc]init];
     switch (num) {
         case 0:
@@ -133,7 +133,7 @@
 }
 
 - (DPPlayer *)randomGetAForward {
-    NSInteger num = [DPProbability probability0to:1];
+    NSInteger num = [DPSProbability probability0to:1];
     DPPlayer *player = [[DPPlayer alloc]init];
     switch (num) {
         case 0:
@@ -164,7 +164,7 @@
 }
 
 - (DPPlayer *)randomGetAPlayerKeepTheBallFromGoalkeeper {
-    NSInteger num = [DPProbability probability];
+    NSInteger num = [DPSProbability probability];
     DPPlayer *player;
     if (num < 40) {
         player = [self randomGetADefender];
@@ -177,7 +177,7 @@
 }
 
 - (DPPlayer *)randomGetAPlayerKeepTheBallFromDefender {
-    NSInteger num = [DPProbability probability];
+    NSInteger num = [DPSProbability probability];
     DPPlayer *player;
     if (num < 60) {
         player = [self randomGetAMidfielder];
@@ -190,7 +190,7 @@
 }
 
 - (DPPlayer *)randomGetAPlayerKeepTheBallFromMidfielder {
-    NSInteger num = [DPProbability probability];
+    NSInteger num = [DPSProbability probability];
     DPPlayer *player;
     if (num < 45) {
         player = [self randomGetAMidfielder];
@@ -203,7 +203,7 @@
 }
 
 - (DPPlayer *)randomGetAPlayerKeepTheBallFromForward {
-    NSInteger num = [DPProbability probability];
+    NSInteger num = [DPSProbability probability];
     DPPlayer *player;
     if (num < 60) {
         player = [self randomGetADefender];
