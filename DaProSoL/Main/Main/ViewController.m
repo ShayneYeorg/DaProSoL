@@ -23,15 +23,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     
-    
-//    for (int n=0; n<10; n++) {
-        DPSClub *ManU = [DPSTestData getStrongTeam:@"ManU"];
-        DPSClub *Barca = [DPSTestData getStrongTeam:@"Liv"];
+    NSInteger homeScore = 0;
+    NSInteger awayScore = 0;
+    for (int n=0; n<500; n++) {
+        DPSClub *ManU = [DPSTestData getMediumTeam:@"ManU"];
+        DPSClub *Barca = [DPSTestData getWeakTeam:@"Liv"];
         DPSMatch *m = [[DPSMatch alloc]init];
         DPSMatchResult *matchResult = [m match:ManU against:Barca];
-        DPSLog(@"%@", matchResult);
-        [matchResult printPlayersTechnicalInfo];
-//    }
+        homeScore += matchResult.homeScore;
+        awayScore += matchResult.awayScore;
+//        DPSLog(@"%@", matchResult);
+//        [matchResult printPlayersTechnicalInfo];
+    }
+    DPSLog(@"home %f : %f away", homeScore/500.0, awayScore/500.0);
     
 //    NSString *name;
 //    for (int i=0; i<100; i++) {

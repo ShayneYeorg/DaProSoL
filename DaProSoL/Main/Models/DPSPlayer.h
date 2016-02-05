@@ -20,16 +20,18 @@ typedef enum _PlayerPosition {
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) PlayerPosition position;//0 1 2 3对应4个位置
 @property (nonatomic, strong) NSString *num;
-@property (nonatomic, assign) NSInteger creativity;
-@property (nonatomic, assign) NSInteger aggressive;
 //@property (nonatomic, strong) NSString *preferNum;
 //@property (nonatomic, assign) NSInteger firstSeason;
 
+//能力值
+@property (nonatomic, assign) NSInteger creativity;
+@property (nonatomic, assign) NSInteger aggressive;
 @property (nonatomic, assign) NSInteger shootAbility;
 @property (nonatomic, assign) NSInteger passAbility;
 @property (nonatomic, assign) NSInteger defendAbility;
 @property (nonatomic, assign) NSInteger saveAbility;
 
+//数据统计
 @property (nonatomic, assign) NSInteger created;
 @property (nonatomic, assign) NSInteger touches;
 @property (nonatomic, assign) NSInteger shoots;

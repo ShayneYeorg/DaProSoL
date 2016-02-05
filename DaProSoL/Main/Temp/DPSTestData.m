@@ -155,7 +155,7 @@
                                           @"5", @"shootAbility",
                                           @"40", @"passAbility",
                                           @"0", @"defendAbility",
-                                          @"80", @"saveAbility",
+                                          @"81", @"saveAbility",
                                           nil]];
 }
 
