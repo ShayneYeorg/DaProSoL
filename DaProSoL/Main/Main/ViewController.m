@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "DPSProbability.h"
-#import "DPMatch.h"
-#import "DPPlayerName.h"
+#import "DPSMatch.h"
+#import "DPSPlayerName.h"
 #import "DPShirt.h"
 #import "DPSTestData.h"
 
@@ -27,15 +27,15 @@
 //    for (int n=0; n<10; n++) {
         DPSClub *ManU = [DPSTestData getStrongTeam:@"ManU"];
         DPSClub *Barca = [DPSTestData getStrongTeam:@"Liv"];
-        DPMatch *m = [[DPMatch alloc]init];
-        DPMatchResult *matchResult = [m match:ManU against:Barca];
+        DPSMatch *m = [[DPSMatch alloc]init];
+        DPSMatchResult *matchResult = [m match:ManU against:Barca];
         DPSLog(@"%@", matchResult);
         [matchResult printPlayersTechnicalInfo];
 //    }
     
 //    NSString *name;
 //    for (int i=0; i<100; i++) {
-//        name = [[DPPlayerName share] name];
+//        name = [[DPSPlayerName share] name];
 //        DPLog(@"%@\n", name);
 //    }
     

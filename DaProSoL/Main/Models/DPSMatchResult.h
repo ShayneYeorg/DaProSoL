@@ -1,5 +1,5 @@
 //
-//  DPMatchResult.h
+//  DPSMatchResult.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPGoal.h"
+#import "DPSGoal.h"
 #import "DPSClub.h"
 
-@interface DPMatchResult : NSObject
+@interface DPSMatchResult : NSObject
 
 @property (nonatomic, strong) DPSClub *homeTeam;
 @property (nonatomic, strong) DPSClub *awayTeam;

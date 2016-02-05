@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DPGoal : NSObject
+@interface DPSGoal : NSObject
 
 @property (nonatomic, assign) BOOL isHomeTeam;
 @property (nonatomic, assign) NSString *scorePlayerNum;

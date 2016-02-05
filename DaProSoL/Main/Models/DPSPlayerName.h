@@ -1,5 +1,5 @@
 //
-//  DPPlayerName.h
+//  DPSPlayerName.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/11/11.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DPPlayerName : NSObject <NSCopying>
+@interface DPSPlayerName : NSObject <NSCopying>
 
 + (instancetype)share;
 - (NSString *)name;

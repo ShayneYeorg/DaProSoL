@@ -1,20 +1,20 @@
 //
-//  DPMatchResult.m
+//  DPSMatchResult.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPMatchResult.h"
+#import "DPSMatchResult.h"
 
-@implementation DPMatchResult
+@implementation DPSMatchResult
 
 - (NSString *)description {
     NSString *returnStr = [NSString stringWithFormat:@"\n\n\n-------------------------------------------------\n%@  %zd : %zd  %@", self.homeTeam.name, self.homeScore, self.awayScore, self.awayTeam.name];
     
     for (int n=0; n<self.goals.count; n++) {
-        DPGoal *goal = self.goals[n];
+        DPSGoal *goal = self.goals[n];
         NSString *dis = @"                        ";
         if ([goal isHomeTeam]){
             dis = @"";
@@ -73,7 +73,7 @@
 }
 
 
-- (NSString *)playerTechInfo:(DPPlayer *)player {
+- (NSString *)playerTechInfo:(DPSPlayer *)player {
     NSString *retStr = [NSString stringWithFormat:@"%@      %zd        %zd       %zd      %zd     %zd       %zd/%zd     %zd/%zd     %zd/%zd\n", player.name, player.created, player.touches, player.shoots, player.goals, player.asists, player.passeSuccess, player.passes, player.tackleSuccess, player.tackles, player.saveSuccess, player.saves];
     return retStr;
 }

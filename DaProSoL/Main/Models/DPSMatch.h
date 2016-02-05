@@ -1,5 +1,5 @@
 //
-//  DPMatch.h
+//  DPSMatch.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/9/2.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPMatchResult.h"
+#import "DPSMatchResult.h"
 #import "DPSClub.h"
 
-@interface DPMatch : NSObject
+@interface DPSMatch : NSObject
 
-- (DPMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam;
+- (DPSMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam;
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPGoal.h"
+#import "DPSGoal.h"
 
-@implementation DPGoal
+@implementation DPSGoal
 
 @end

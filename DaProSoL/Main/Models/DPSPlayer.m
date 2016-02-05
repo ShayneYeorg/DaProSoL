@@ -1,20 +1,20 @@
 //
-//  DPPlayer.m
+//  DPSPlayer.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPPlayer.h"
+#import "DPSPlayer.h"
 #import "DPSProbability.h"
 
-@interface DPPlayer ()
+@interface DPSPlayer ()
 
 
 @end
 
-@implementation DPPlayer
+@implementation DPSPlayer
 
 - (instancetype)initWithDict:(NSDictionary *)dict {
     self = [super init];

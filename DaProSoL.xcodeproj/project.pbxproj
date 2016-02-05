@@ -10,16 +10,16 @@
 		34B327731C6477F70097617B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327591C6477F70097617B /* AppDelegate.m */; };
 		34B327741C6477F70097617B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3275B1C6477F70097617B /* main.m */; };
 		34B327751C6477F70097617B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3275D1C6477F70097617B /* ViewController.m */; };
-		34B327761C6477F70097617B /* DPGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327611C6477F70097617B /* DPGoal.m */; };
-		34B327771C6477F70097617B /* DPMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327631C6477F70097617B /* DPMatch.m */; };
-		34B327781C6477F70097617B /* DPMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327651C6477F70097617B /* DPMatchResult.m */; };
-		34B327791C6477F70097617B /* DPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327671C6477F70097617B /* DPPlayer.m */; };
-		34B3277A1C6477F70097617B /* DPPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327691C6477F70097617B /* DPPlayerName.m */; };
 		34B3277C1C6477F70097617B /* DPShirt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276D1C6477F70097617B /* DPShirt.m */; };
 		34B3277D1C6477F70097617B /* DPSTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3276F1C6477F70097617B /* DPSTestData.m */; };
 		34B3277E1C6477F70097617B /* DPSProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327721C6477F70097617B /* DPSProbability.m */; };
 		34B327811C64781B0097617B /* DPSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327801C64781B0097617B /* DPSClub.m */; };
 		34B327831C6478B60097617B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B327821C6478B60097617B /* Info.plist */; };
+		34B3278E1C647BF80097617B /* DPSGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327851C647BF80097617B /* DPSGoal.m */; };
+		34B3278F1C647BF80097617B /* DPSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327871C647BF80097617B /* DPSMatch.m */; };
+		34B327901C647BF80097617B /* DPSMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327891C647BF80097617B /* DPSMatchResult.m */; };
+		34B327911C647BF80097617B /* DPSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3278B1C647BF80097617B /* DPSPlayer.m */; };
+		34B327921C647BF80097617B /* DPSPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B3278D1C647BF80097617B /* DPSPlayerName.m */; };
 		34FFC63E1B871E7C0029E141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63C1B871E7C0029E141 /* Main.storyboard */; };
 		34FFC6401B871E7C0029E141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63F1B871E7C0029E141 /* Images.xcassets */; };
 		34FFC6431B871E7C0029E141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC6411B871E7C0029E141 /* LaunchScreen.xib */; };
@@ -44,16 +44,6 @@
 		34B3275B1C6477F70097617B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34B3275C1C6477F70097617B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		34B3275D1C6477F70097617B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		34B327601C6477F70097617B /* DPGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGoal.h; sourceTree = "<group>"; };
-		34B327611C6477F70097617B /* DPGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGoal.m; sourceTree = "<group>"; };
-		34B327621C6477F70097617B /* DPMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatch.h; sourceTree = "<group>"; };
-		34B327631C6477F70097617B /* DPMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatch.m; sourceTree = "<group>"; };
-		34B327641C6477F70097617B /* DPMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMatchResult.h; sourceTree = "<group>"; };
-		34B327651C6477F70097617B /* DPMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMatchResult.m; sourceTree = "<group>"; };
-		34B327661C6477F70097617B /* DPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayer.h; sourceTree = "<group>"; };
-		34B327671C6477F70097617B /* DPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayer.m; sourceTree = "<group>"; };
-		34B327681C6477F70097617B /* DPPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPlayerName.h; sourceTree = "<group>"; };
-		34B327691C6477F70097617B /* DPPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPlayerName.m; sourceTree = "<group>"; };
 		34B3276C1C6477F70097617B /* DPShirt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShirt.h; sourceTree = "<group>"; };
 		34B3276D1C6477F70097617B /* DPShirt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShirt.m; sourceTree = "<group>"; };
 		34B3276E1C6477F70097617B /* DPSTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSTestData.h; sourceTree = "<group>"; };
@@ -63,6 +53,16 @@
 		34B3277F1C64781B0097617B /* DPSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSClub.h; sourceTree = "<group>"; };
 		34B327801C64781B0097617B /* DPSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSClub.m; sourceTree = "<group>"; };
 		34B327821C6478B60097617B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34B327841C647BF80097617B /* DPSGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSGoal.h; sourceTree = "<group>"; };
+		34B327851C647BF80097617B /* DPSGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSGoal.m; sourceTree = "<group>"; };
+		34B327861C647BF80097617B /* DPSMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSMatch.h; sourceTree = "<group>"; };
+		34B327871C647BF80097617B /* DPSMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSMatch.m; sourceTree = "<group>"; };
+		34B327881C647BF80097617B /* DPSMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSMatchResult.h; sourceTree = "<group>"; };
+		34B327891C647BF80097617B /* DPSMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSMatchResult.m; sourceTree = "<group>"; };
+		34B3278A1C647BF80097617B /* DPSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSPlayer.h; sourceTree = "<group>"; };
+		34B3278B1C647BF80097617B /* DPSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayer.m; sourceTree = "<group>"; };
+		34B3278C1C647BF80097617B /* DPSPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSPlayerName.h; sourceTree = "<group>"; };
+		34B3278D1C647BF80097617B /* DPSPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayerName.m; sourceTree = "<group>"; };
 		34FFC62F1B871E7C0029E141 /* DaProSoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaProSoL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC63D1B871E7C0029E141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FFC63F1B871E7C0029E141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -117,6 +117,16 @@
 		34B3275E1C6477F70097617B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34B327841C647BF80097617B /* DPSGoal.h */,
+				34B327851C647BF80097617B /* DPSGoal.m */,
+				34B327861C647BF80097617B /* DPSMatch.h */,
+				34B327871C647BF80097617B /* DPSMatch.m */,
+				34B327881C647BF80097617B /* DPSMatchResult.h */,
+				34B327891C647BF80097617B /* DPSMatchResult.m */,
+				34B3278A1C647BF80097617B /* DPSPlayer.h */,
+				34B3278B1C647BF80097617B /* DPSPlayer.m */,
+				34B3278C1C647BF80097617B /* DPSPlayerName.h */,
+				34B3278D1C647BF80097617B /* DPSPlayerName.m */,
 				34B3277F1C64781B0097617B /* DPSClub.h */,
 				34B327801C64781B0097617B /* DPSClub.m */,
 			);
@@ -126,16 +136,6 @@
 		34B3275F1C6477F70097617B /* Temp */ = {
 			isa = PBXGroup;
 			children = (
-				34B327601C6477F70097617B /* DPGoal.h */,
-				34B327611C6477F70097617B /* DPGoal.m */,
-				34B327621C6477F70097617B /* DPMatch.h */,
-				34B327631C6477F70097617B /* DPMatch.m */,
-				34B327641C6477F70097617B /* DPMatchResult.h */,
-				34B327651C6477F70097617B /* DPMatchResult.m */,
-				34B327661C6477F70097617B /* DPPlayer.h */,
-				34B327671C6477F70097617B /* DPPlayer.m */,
-				34B327681C6477F70097617B /* DPPlayerName.h */,
-				34B327691C6477F70097617B /* DPPlayerName.m */,
 				34B3276C1C6477F70097617B /* DPShirt.h */,
 				34B3276D1C6477F70097617B /* DPShirt.m */,
 				34B3276E1C6477F70097617B /* DPSTestData.h */,
@@ -310,17 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B3278F1C647BF80097617B /* DPSMatch.m in Sources */,
 				34B327751C6477F70097617B /* ViewController.m in Sources */,
 				34B327741C6477F70097617B /* main.m in Sources */,
-				34B327781C6477F70097617B /* DPMatchResult.m in Sources */,
 				34B3277C1C6477F70097617B /* DPShirt.m in Sources */,
 				34B3277D1C6477F70097617B /* DPSTestData.m in Sources */,
-				34B3277A1C6477F70097617B /* DPPlayerName.m in Sources */,
-				34B327761C6477F70097617B /* DPGoal.m in Sources */,
-				34B327771C6477F70097617B /* DPMatch.m in Sources */,
-				34B327791C6477F70097617B /* DPPlayer.m in Sources */,
 				34B327811C64781B0097617B /* DPSClub.m in Sources */,
+				34B327911C647BF80097617B /* DPSPlayer.m in Sources */,
+				34B327921C647BF80097617B /* DPSPlayerName.m in Sources */,
 				34B327731C6477F70097617B /* AppDelegate.m in Sources */,
+				34B3278E1C647BF80097617B /* DPSGoal.m in Sources */,
+				34B327901C647BF80097617B /* DPSMatchResult.m in Sources */,
 				34B3277E1C6477F70097617B /* DPSProbability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

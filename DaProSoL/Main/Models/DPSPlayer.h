@@ -1,5 +1,5 @@
 //
-//  DPPlayer.h
+//  DPSPlayer.h
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/8/21.
@@ -15,7 +15,7 @@ typedef enum _PlayerPosition {
     Player_Position_Forward    = 3
 } PlayerPosition;
 
-@interface DPPlayer : NSObject
+@interface DPSPlayer : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) PlayerPosition position;//0 1 2 3对应4个位置

@@ -1,24 +1,24 @@
 //
-//  DPMatch.m
+//  DPSMatch.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/9/2.
 //  Copyright (c) 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPMatch.h"
+#import "DPSMatch.h"
 #import "DPSProbability.h"
 
-@interface DPMatch ()
+@interface DPSMatch ()
 
-@property (nonatomic, strong) DPMatchResult *matchResult;
+@property (nonatomic, strong) DPSMatchResult *matchResult;
 
 @end
 
-@implementation DPMatch
+@implementation DPSMatch
 
-- (DPMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam {
-    self.matchResult = [[DPMatchResult alloc]init];
+- (DPSMatchResult *)match:(DPSClub *)homeTeam against:(DPSClub *)awayTeam {
+    self.matchResult = [[DPSMatchResult alloc]init];
     self.matchResult.homeTeam = homeTeam;
     self.matchResult.awayTeam = awayTeam;
     self.matchResult.homeScore = 0;
@@ -123,7 +123,7 @@
     [self playerAttack:self.matchResult.awayTeam.forward2 passedBy:nil inTeam:self.matchResult.awayTeam against:self.matchResult.homeTeam chances:awayCreateFor2];
 }
 
-- (void)playerAttack:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team against:(DPSClub *)againstTeam chances:(NSInteger)chances {
+- (void)playerAttack:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team against:(DPSClub *)againstTeam chances:(NSInteger)chances {
     for (int i=0; i<chances; i++) {
         player.touches += 1;
         if (player.aggressive >= [DPSProbability probability]) {
@@ -152,7 +152,7 @@
         } else {
             //pass
             player.passes += 1;
-            DPPlayer *defender = [againstTeam randomGetAPlayerAgainst:player];
+            DPSPlayer *defender = [againstTeam randomGetAPlayerAgainst:player];
             defender.tackles += 1;
             if (player.passAbility >= defender.defendAbility) {
                 //depend on the passer
@@ -177,7 +177,7 @@
     }
 }
 
-- (void)player:(DPPlayer *)player inTeam:(DPSClub *)team passAgainstDefender:(DPPlayer *)defender inTeam:(DPSClub *)againstTeam {
+- (void)player:(DPSPlayer *)player inTeam:(DPSClub *)team passAgainstDefender:(DPSPlayer *)defender inTeam:(DPSClub *)againstTeam {
     if([player pass]) {
         player.passeSuccess += 1;
         [self playerAttack:[team randomGetAPlayerKeepTheBallFrom:player] passedBy:player inTeam:team against:againstTeam chances:1];
@@ -187,7 +187,7 @@
     }
 }
 
-- (void)defender:(DPPlayer *)defender inTeam:(DPSClub *)team defendAgainstPasser:(DPPlayer *)player inTeam:(DPSClub *)againstTeam {
+- (void)defender:(DPSPlayer *)defender inTeam:(DPSClub *)team defendAgainstPasser:(DPSPlayer *)player inTeam:(DPSClub *)againstTeam {
     if([player defend]) {
         defender.tackleSuccess += 1;
         
@@ -197,7 +197,7 @@
     }
 }
 
-- (void)player:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team shootAgainstGoalKeeper:(DPPlayer *)goalKeeper {
+- (void)player:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team shootAgainstGoalKeeper:(DPSPlayer *)goalKeeper {
     if([player shoot]) {
         player.goals += 1;
         passer.asists += 1;
@@ -208,7 +208,7 @@
     }
 }
 
-- (void)goalKeeper:(DPPlayer *)goalKeeper saveAgainstPlayer:(DPPlayer *)player passer:(DPPlayer *)passer inTeam:(DPSClub *)team {
+- (void)goalKeeper:(DPSPlayer *)goalKeeper saveAgainstPlayer:(DPSPlayer *)player passer:(DPSPlayer *)passer inTeam:(DPSClub *)team {
     if ([goalKeeper save]) {
         goalKeeper.saveSuccess += 1;
         
@@ -219,10 +219,10 @@
     }
 }
 
-- (void)goalBy:(DPPlayer *)player passedBy:(DPPlayer *)passer inTeam:(DPSClub *)team {
+- (void)goalBy:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team {
     if (team == self.matchResult.homeTeam) {
         self.matchResult.homeScore += 1;
-        DPGoal *goal = [[DPGoal alloc]init];
+        DPSGoal *goal = [[DPSGoal alloc]init];
         goal.isHomeTeam = YES;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;
@@ -233,7 +233,7 @@
         
     } else {
         self.matchResult.awayScore += 1;
-        DPGoal *goal = [[DPGoal alloc]init];
+        DPSGoal *goal = [[DPSGoal alloc]init];
         goal.isHomeTeam = NO;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;

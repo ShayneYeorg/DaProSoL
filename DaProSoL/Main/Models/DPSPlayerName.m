@@ -1,15 +1,15 @@
 //
-//  DPPlayerName.m
+//  DPSPlayerName.m
 //  DaProSoL
 //
 //  Created by 杨淳引 on 15/11/11.
 //  Copyright © 2015年 ShayneYeorg. All rights reserved.
 //
 
-#import "DPPlayerName.h"
+#import "DPSPlayerName.h"
 #import "DPSProbability.h"
 
-@interface DPPlayerName ()
+@interface DPSPlayerName ()
 
 @property (nonatomic, strong) NSArray *commonKeynotes;
 @property (nonatomic, strong) NSArray *commonConsonants;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation DPPlayerName
+@implementation DPSPlayerName
 
 static id _instance;
 

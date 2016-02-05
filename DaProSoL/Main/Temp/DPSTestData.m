@@ -21,27 +21,27 @@
 
 + (DPSClub *)getStrongTeam:(NSString *)teamName {
     
-    DPPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"GK" num:@"1"];
+    DPSPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"GK" num:@"1"];
     
-    DPPlayer *Defender1 = [DPSTestData getStrongDefender:@"D1" num:@"2"];
+    DPSPlayer *Defender1 = [DPSTestData getStrongDefender:@"D1" num:@"2"];
     
-    DPPlayer *Defender2 = [DPSTestData getStrongDefender:@"D2" num:@"3"];
+    DPSPlayer *Defender2 = [DPSTestData getStrongDefender:@"D2" num:@"3"];
     
-    DPPlayer *Defender3 = [DPSTestData getStrongDefender:@"D3" num:@"4"];
+    DPSPlayer *Defender3 = [DPSTestData getStrongDefender:@"D3" num:@"4"];
     
-    DPPlayer *Defender4 = [DPSTestData getStrongDefender:@"D4" num:@"5"];
+    DPSPlayer *Defender4 = [DPSTestData getStrongDefender:@"D4" num:@"5"];
     
-    DPPlayer *Midefielder1 = [DPSTestData getStrongMidfielder:@"M1" num:@"6"];
+    DPSPlayer *Midefielder1 = [DPSTestData getStrongMidfielder:@"M1" num:@"6"];
     
-    DPPlayer *Midefielder2 = [DPSTestData getStrongMidfielder:@"M2" num:@"7"];
+    DPSPlayer *Midefielder2 = [DPSTestData getStrongMidfielder:@"M2" num:@"7"];
     
-    DPPlayer *Midefielder3 = [DPSTestData getStrongMidfielder:@"M3" num:@"8"];
+    DPSPlayer *Midefielder3 = [DPSTestData getStrongMidfielder:@"M3" num:@"8"];
     
-    DPPlayer *Midefielder4 = [DPSTestData getStrongMidfielder:@"M4" num:@"10"];
+    DPSPlayer *Midefielder4 = [DPSTestData getStrongMidfielder:@"M4" num:@"10"];
     
-    DPPlayer *Forward1 = [DPSTestData getStrongForward:@"F1" num:@"9"];
+    DPSPlayer *Forward1 = [DPSTestData getStrongForward:@"F1" num:@"9"];
     
-    DPPlayer *Forward2 = [DPSTestData getStrongForward:@"F2" num:@"11"];
+    DPSPlayer *Forward2 = [DPSTestData getStrongForward:@"F2" num:@"11"];
     
     DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       teamName,@"name",
@@ -63,27 +63,27 @@
 
 + (DPSClub *)getMediumTeam:(NSString *)teamName {
     
-    DPPlayer *GoalKeeper = [DPSTestData getMediumGoalKeeper:@"GK" num:@"1"];
+    DPSPlayer *GoalKeeper = [DPSTestData getMediumGoalKeeper:@"GK" num:@"1"];
     
-    DPPlayer *Defender1 = [DPSTestData getMediumDefender:@"D1" num:@"2"];
+    DPSPlayer *Defender1 = [DPSTestData getMediumDefender:@"D1" num:@"2"];
     
-    DPPlayer *Defender2 = [DPSTestData getMediumDefender:@"D2" num:@"3"];
+    DPSPlayer *Defender2 = [DPSTestData getMediumDefender:@"D2" num:@"3"];
     
-    DPPlayer *Defender3 = [DPSTestData getMediumDefender:@"D3" num:@"4"];
+    DPSPlayer *Defender3 = [DPSTestData getMediumDefender:@"D3" num:@"4"];
     
-    DPPlayer *Defender4 = [DPSTestData getMediumDefender:@"D4" num:@"5"];
+    DPSPlayer *Defender4 = [DPSTestData getMediumDefender:@"D4" num:@"5"];
     
-    DPPlayer *Midefielder1 = [DPSTestData getMediumMidfielder:@"M1" num:@"6"];
+    DPSPlayer *Midefielder1 = [DPSTestData getMediumMidfielder:@"M1" num:@"6"];
     
-    DPPlayer *Midefielder2 = [DPSTestData getMediumMidfielder:@"M2" num:@"7"];
+    DPSPlayer *Midefielder2 = [DPSTestData getMediumMidfielder:@"M2" num:@"7"];
     
-    DPPlayer *Midefielder3 = [DPSTestData getMediumMidfielder:@"M3" num:@"8"];
+    DPSPlayer *Midefielder3 = [DPSTestData getMediumMidfielder:@"M3" num:@"8"];
     
-    DPPlayer *Midefielder4 = [DPSTestData getMediumMidfielder:@"M4" num:@"10"];
+    DPSPlayer *Midefielder4 = [DPSTestData getMediumMidfielder:@"M4" num:@"10"];
     
-    DPPlayer *Forward1 = [DPSTestData getMediumForward:@"F1" num:@"9"];
+    DPSPlayer *Forward1 = [DPSTestData getMediumForward:@"F1" num:@"9"];
     
-    DPPlayer *Forward2 = [DPSTestData getMediumForward:@"F2" num:@"11"];
+    DPSPlayer *Forward2 = [DPSTestData getMediumForward:@"F2" num:@"11"];
     
     DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                             teamName,@"name",
@@ -105,27 +105,27 @@
 
 + (DPSClub *)getWeakTeam:(NSString *)teamName {
     
-    DPPlayer *GoalKeeper = [DPSTestData getWeakGoalKeeper:@"GK" num:@"1"];
+    DPSPlayer *GoalKeeper = [DPSTestData getWeakGoalKeeper:@"GK" num:@"1"];
     
-    DPPlayer *Defender1 = [DPSTestData getWeakDefender:@"D1" num:@"2"];
+    DPSPlayer *Defender1 = [DPSTestData getWeakDefender:@"D1" num:@"2"];
     
-    DPPlayer *Defender2 = [DPSTestData getWeakDefender:@"D2" num:@"3"];
+    DPSPlayer *Defender2 = [DPSTestData getWeakDefender:@"D2" num:@"3"];
     
-    DPPlayer *Defender3 = [DPSTestData getWeakDefender:@"D3" num:@"4"];
+    DPSPlayer *Defender3 = [DPSTestData getWeakDefender:@"D3" num:@"4"];
     
-    DPPlayer *Defender4 = [DPSTestData getWeakDefender:@"D4" num:@"5"];
+    DPSPlayer *Defender4 = [DPSTestData getWeakDefender:@"D4" num:@"5"];
     
-    DPPlayer *Midefielder1 = [DPSTestData getWeakMidfielder:@"M1" num:@"6"];
+    DPSPlayer *Midefielder1 = [DPSTestData getWeakMidfielder:@"M1" num:@"6"];
     
-    DPPlayer *Midefielder2 = [DPSTestData getWeakMidfielder:@"M2" num:@"7"];
+    DPSPlayer *Midefielder2 = [DPSTestData getWeakMidfielder:@"M2" num:@"7"];
     
-    DPPlayer *Midefielder3 = [DPSTestData getWeakMidfielder:@"M3" num:@"8"];
+    DPSPlayer *Midefielder3 = [DPSTestData getWeakMidfielder:@"M3" num:@"8"];
     
-    DPPlayer *Midefielder4 = [DPSTestData getWeakMidfielder:@"M4" num:@"10"];
+    DPSPlayer *Midefielder4 = [DPSTestData getWeakMidfielder:@"M4" num:@"10"];
     
-    DPPlayer *Forward1 = [DPSTestData getWeakForward:@"F1" num:@"9"];
+    DPSPlayer *Forward1 = [DPSTestData getWeakForward:@"F1" num:@"9"];
     
-    DPPlayer *Forward2 = [DPSTestData getWeakForward:@"F2" num:@"11"];
+    DPSPlayer *Forward2 = [DPSTestData getWeakForward:@"F2" num:@"11"];
     
     DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       teamName,@"name",
@@ -145,8 +145,8 @@
     return team;
 }
 
-+ (DPPlayer *)getStrongGoalKeeper:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getStrongGoalKeeper:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"0", @"position",
@@ -159,8 +159,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getStrongDefender:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getStrongDefender:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"1", @"position",
@@ -173,8 +173,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getStrongMidfielder:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getStrongMidfielder:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"2", @"position",
@@ -187,8 +187,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getStrongForward:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getStrongForward:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"3", @"position",
@@ -201,8 +201,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getMediumGoalKeeper:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getMediumGoalKeeper:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"0", @"position",
@@ -215,8 +215,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getMediumDefender:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getMediumDefender:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"1", @"position",
@@ -229,8 +229,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getMediumMidfielder:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getMediumMidfielder:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"2", @"position",
@@ -243,8 +243,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getMediumForward:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getMediumForward:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"3", @"position",
@@ -257,8 +257,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getWeakGoalKeeper:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getWeakGoalKeeper:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"0", @"position",
@@ -271,8 +271,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getWeakDefender:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getWeakDefender:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"1", @"position",
@@ -285,8 +285,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getWeakMidfielder:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getWeakMidfielder:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"2", @"position",
@@ -299,8 +299,8 @@
                                           nil]];
 }
 
-+ (DPPlayer *)getWeakForward:(NSString *)name num:(NSString *)num {
-    return [[DPPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
++ (DPSPlayer *)getWeakForward:(NSString *)name num:(NSString *)num {
+    return [[DPSPlayer alloc]initWithDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                           name, @"name",
                                           num, @"num",
                                           @"3", @"position",

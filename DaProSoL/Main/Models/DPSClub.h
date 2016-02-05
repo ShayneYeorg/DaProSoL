@@ -7,25 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPPlayer.h"
+#import "DPSPlayer.h"
 
 @interface DPSClub : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) DPPlayer *goalKeeper;
-@property (nonatomic, strong) DPPlayer *defender1;
-@property (nonatomic, strong) DPPlayer *defender2;
-@property (nonatomic, strong) DPPlayer *defender3;
-@property (nonatomic, strong) DPPlayer *defender4;
-@property (nonatomic, strong) DPPlayer *midfielder1;
-@property (nonatomic, strong) DPPlayer *midfielder2;
-@property (nonatomic, strong) DPPlayer *midfielder3;
-@property (nonatomic, strong) DPPlayer *midfielder4;
-@property (nonatomic, strong) DPPlayer *forward1;
-@property (nonatomic, strong) DPPlayer *forward2;
+@property (nonatomic, strong) DPSPlayer *goalKeeper;
+@property (nonatomic, strong) DPSPlayer *defender1;
+@property (nonatomic, strong) DPSPlayer *defender2;
+@property (nonatomic, strong) DPSPlayer *defender3;
+@property (nonatomic, strong) DPSPlayer *defender4;
+@property (nonatomic, strong) DPSPlayer *midfielder1;
+@property (nonatomic, strong) DPSPlayer *midfielder2;
+@property (nonatomic, strong) DPSPlayer *midfielder3;
+@property (nonatomic, strong) DPSPlayer *midfielder4;
+@property (nonatomic, strong) DPSPlayer *forward1;
+@property (nonatomic, strong) DPSPlayer *forward2;
 
 - (instancetype)initWithPlayerDict:(NSDictionary *)dict;
-- (DPPlayer *)randomGetAPlayerAgainst:(DPPlayer *)player;
-- (DPPlayer *)randomGetAPlayerKeepTheBallFrom:(DPPlayer *)player;
+- (DPSPlayer *)randomGetAPlayerAgainst:(DPSPlayer *)player;
+- (DPSPlayer *)randomGetAPlayerKeepTheBallFrom:(DPSPlayer *)player;
 
 @end
