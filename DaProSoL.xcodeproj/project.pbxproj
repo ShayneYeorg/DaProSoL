@@ -15,6 +15,11 @@
 		34B3277E1C6477F70097617B /* DPSProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B327721C6477F70097617B /* DPSProbability.m */; };
 		34B327831C6478B60097617B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B327821C6478B60097617B /* Info.plist */; };
 		34E779FA1C65C2E300C3681D /* DPSClub.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E779F91C65C2E300C3681D /* DPSClub.m */; };
+		34E77A051C65C3F900C3681D /* DPSGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E779FC1C65C3F900C3681D /* DPSGoal.m */; };
+		34E77A061C65C3F900C3681D /* DPSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E779FE1C65C3F900C3681D /* DPSMatch.m */; };
+		34E77A071C65C3F900C3681D /* DPSMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A001C65C3F900C3681D /* DPSMatchResult.m */; };
+		34E77A081C65C3F900C3681D /* DPSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A021C65C3F900C3681D /* DPSPlayer.m */; };
+		34E77A091C65C3F900C3681D /* DPSPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A041C65C3F900C3681D /* DPSPlayerName.m */; };
 		34FFC63E1B871E7C0029E141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63C1B871E7C0029E141 /* Main.storyboard */; };
 		34FFC6401B871E7C0029E141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC63F1B871E7C0029E141 /* Images.xcassets */; };
 		34FFC6431B871E7C0029E141 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FFC6411B871E7C0029E141 /* LaunchScreen.xib */; };
@@ -48,6 +53,16 @@
 		34B327821C6478B60097617B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34E779F81C65C2E300C3681D /* DPSClub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSClub.h; sourceTree = "<group>"; };
 		34E779F91C65C2E300C3681D /* DPSClub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSClub.m; sourceTree = "<group>"; };
+		34E779FB1C65C3F900C3681D /* DPSGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSGoal.h; sourceTree = "<group>"; };
+		34E779FC1C65C3F900C3681D /* DPSGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSGoal.m; sourceTree = "<group>"; };
+		34E779FD1C65C3F900C3681D /* DPSMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSMatch.h; sourceTree = "<group>"; };
+		34E779FE1C65C3F900C3681D /* DPSMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSMatch.m; sourceTree = "<group>"; };
+		34E779FF1C65C3F900C3681D /* DPSMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSMatchResult.h; sourceTree = "<group>"; };
+		34E77A001C65C3F900C3681D /* DPSMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSMatchResult.m; sourceTree = "<group>"; };
+		34E77A011C65C3F900C3681D /* DPSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSPlayer.h; sourceTree = "<group>"; };
+		34E77A021C65C3F900C3681D /* DPSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayer.m; sourceTree = "<group>"; };
+		34E77A031C65C3F900C3681D /* DPSPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSPlayerName.h; sourceTree = "<group>"; };
+		34E77A041C65C3F900C3681D /* DPSPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayerName.m; sourceTree = "<group>"; };
 		34FFC62F1B871E7C0029E141 /* DaProSoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaProSoL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FFC63D1B871E7C0029E141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FFC63F1B871E7C0029E141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -104,6 +119,16 @@
 			children = (
 				34E779F81C65C2E300C3681D /* DPSClub.h */,
 				34E779F91C65C2E300C3681D /* DPSClub.m */,
+				34E779FB1C65C3F900C3681D /* DPSGoal.h */,
+				34E779FC1C65C3F900C3681D /* DPSGoal.m */,
+				34E779FD1C65C3F900C3681D /* DPSMatch.h */,
+				34E779FE1C65C3F900C3681D /* DPSMatch.m */,
+				34E779FF1C65C3F900C3681D /* DPSMatchResult.h */,
+				34E77A001C65C3F900C3681D /* DPSMatchResult.m */,
+				34E77A011C65C3F900C3681D /* DPSPlayer.h */,
+				34E77A021C65C3F900C3681D /* DPSPlayer.m */,
+				34E77A031C65C3F900C3681D /* DPSPlayerName.h */,
+				34E77A041C65C3F900C3681D /* DPSPlayerName.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,12 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E77A061C65C3F900C3681D /* DPSMatch.m in Sources */,
 				34B327751C6477F70097617B /* ViewController.m in Sources */,
 				34B327741C6477F70097617B /* main.m in Sources */,
 				34B3277C1C6477F70097617B /* DPShirt.m in Sources */,
 				34B3277D1C6477F70097617B /* DPSTestData.m in Sources */,
 				34B327731C6477F70097617B /* AppDelegate.m in Sources */,
+				34E77A081C65C3F900C3681D /* DPSPlayer.m in Sources */,
+				34E77A091C65C3F900C3681D /* DPSPlayerName.m in Sources */,
 				34E779FA1C65C2E300C3681D /* DPSClub.m in Sources */,
+				34E77A051C65C3F900C3681D /* DPSGoal.m in Sources */,
+				34E77A071C65C3F900C3681D /* DPSMatchResult.m in Sources */,
 				34B3277E1C6477F70097617B /* DPSProbability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
