@@ -26,7 +26,7 @@
 //    NSInteger homeScore = 0;
 //    NSInteger awayScore = 0;
 //    for (int n=0; n<500; n++) {
-        DPSClub *ManU = [DPSTestData getStrongTeam:@"ManU"];
+        DPSClub *ManU = [DPSTestData getMediumTeam:@"ManU"];
         DPSClub *Barca = [DPSTestData getWeakTeam:@"Liv"];
         DPSMatch *m = [[DPSMatch alloc]init];
         DPSMatchResult *matchResult = [m match:ManU against:Barca];
