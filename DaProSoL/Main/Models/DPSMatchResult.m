@@ -22,8 +22,8 @@
         NSString *scoreInfo = [NSString stringWithFormat:@"\n%@%@ %@ %@", dis, goal.time, goal.scorePlayerNum, goal.scorePlayer];
         returnStr = [returnStr stringByAppendingString:scoreInfo];
         
-        if (goal.assisPlayer) {
-            NSString *assistInfo = [NSString stringWithFormat:@"(%@)", goal.assisPlayer];
+        if (goal.assistPlayer) {
+            NSString *assistInfo = [NSString stringWithFormat:@"(%@)", goal.assistPlayer];
             returnStr = [returnStr stringByAppendingString:assistInfo];
         }
     }

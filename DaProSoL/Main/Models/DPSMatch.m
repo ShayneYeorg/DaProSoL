@@ -124,6 +124,8 @@
 }
 
 - (void)playerAttack:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team against:(DPSClub *)againstTeam chances:(NSInteger)chances {
+    if (chances == 0) return;
+    
     for (int i=0; i<chances; i++) {
         player.touches += 1;
         if (player.aggressive >= [DPSProbability probability]) {
@@ -226,8 +228,8 @@
         goal.isHomeTeam = YES;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;
-        goal.assisPlayerNum = passer.num;
-        goal.assisPlayer = passer.name;
+        goal.assistPlayerNum = passer.num;
+        goal.assistPlayer = passer.name;
         goal.time = [self goalTime];
         [self.matchResult.goals addObject:goal];
         
@@ -237,8 +239,8 @@
         goal.isHomeTeam = NO;
         goal.scorePlayerNum = player.num;
         goal.scorePlayer = player.name;
-        goal.assisPlayerNum = passer.num;
-        goal.assisPlayer = passer.name;
+        goal.assistPlayerNum = passer.num;
+        goal.assistPlayer = passer.name;
         goal.time = [self goalTime];
         [self.matchResult.goals addObject:goal];
     }
