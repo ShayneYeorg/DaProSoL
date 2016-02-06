@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34E77A181C65C5FD00C3681D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A171C65C5FD00C3681D /* main.m */; };
-		34E77A1B1C65C5FD00C3681D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A1A1C65C5FD00C3681D /* AppDelegate.m */; };
-		34E77A1E1C65C5FD00C3681D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A1D1C65C5FD00C3681D /* ViewController.m */; };
 		34E77A211C65C5FD00C3681D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E77A1F1C65C5FD00C3681D /* Main.storyboard */; };
 		34E77A241C65C5FD00C3681D /* DaProSoL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A221C65C5FD00C3681D /* DaProSoL.xcdatamodeld */; };
 		34E77A261C65C5FD00C3681D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E77A251C65C5FD00C3681D /* Assets.xcassets */; };
 		34E77A291C65C5FD00C3681D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E77A271C65C5FD00C3681D /* LaunchScreen.storyboard */; };
 		34E77A341C65C5FD00C3681D /* DaProSoLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A331C65C5FD00C3681D /* DaProSoLTests.m */; };
 		34E77A3F1C65C5FD00C3681D /* DaProSoLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A3E1C65C5FD00C3681D /* DaProSoLUITests.m */; };
+		34E77A521C65C6EA00C3681D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A4E1C65C6EA00C3681D /* AppDelegate.m */; };
+		34E77A531C65C6EA00C3681D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A4F1C65C6EA00C3681D /* main.m */; };
+		34E77A541C65C6EA00C3681D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A511C65C6EA00C3681D /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +37,6 @@
 
 /* Begin PBXFileReference section */
 		34E77A131C65C5FD00C3681D /* DaProSoL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaProSoL.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		34E77A171C65C5FD00C3681D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34E77A191C65C5FD00C3681D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		34E77A1A1C65C5FD00C3681D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34E77A1C1C65C5FD00C3681D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		34E77A1D1C65C5FD00C3681D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		34E77A201C65C5FD00C3681D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34E77A231C65C5FD00C3681D /* DaProSoL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DaProSoL.xcdatamodel; sourceTree = "<group>"; };
 		34E77A251C65C5FD00C3681D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +48,11 @@
 		34E77A3A1C65C5FD00C3681D /* DaProSoLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaProSoLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E77A3E1C65C5FD00C3681D /* DaProSoLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaProSoLUITests.m; sourceTree = "<group>"; };
 		34E77A401C65C5FD00C3681D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34E77A4D1C65C6EA00C3681D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34E77A4E1C65C6EA00C3681D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34E77A4F1C65C6EA00C3681D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34E77A501C65C6EA00C3681D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34E77A511C65C6EA00C3681D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +103,7 @@
 		34E77A151C65C5FD00C3681D /* DaProSoL */ = {
 			isa = PBXGroup;
 			children = (
-				34E77A191C65C5FD00C3681D /* AppDelegate.h */,
-				34E77A1A1C65C5FD00C3681D /* AppDelegate.m */,
-				34E77A1C1C65C5FD00C3681D /* ViewController.h */,
-				34E77A1D1C65C5FD00C3681D /* ViewController.m */,
+				34E77A4C1C65C6EA00C3681D /* Main */,
 				34E77A1F1C65C5FD00C3681D /* Main.storyboard */,
 				34E77A251C65C5FD00C3681D /* Assets.xcassets */,
 				34E77A271C65C5FD00C3681D /* LaunchScreen.storyboard */,
@@ -120,7 +117,6 @@
 		34E77A161C65C5FD00C3681D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				34E77A171C65C5FD00C3681D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +137,19 @@
 				34E77A401C65C5FD00C3681D /* Info.plist */,
 			);
 			path = DaProSoLUITests;
+			sourceTree = "<group>";
+		};
+		34E77A4C1C65C6EA00C3681D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				34E77A4D1C65C6EA00C3681D /* AppDelegate.h */,
+				34E77A4E1C65C6EA00C3681D /* AppDelegate.m */,
+				34E77A4F1C65C6EA00C3681D /* main.m */,
+				34E77A501C65C6EA00C3681D /* ViewController.h */,
+				34E77A511C65C6EA00C3681D /* ViewController.m */,
+			);
+			name = Main;
+			path = Main/Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34E77A1E1C65C5FD00C3681D /* ViewController.m in Sources */,
+				34E77A521C65C6EA00C3681D /* AppDelegate.m in Sources */,
+				34E77A531C65C6EA00C3681D /* main.m in Sources */,
+				34E77A541C65C6EA00C3681D /* ViewController.m in Sources */,
 				34E77A241C65C5FD00C3681D /* DaProSoL.xcdatamodeld in Sources */,
-				34E77A1B1C65C5FD00C3681D /* AppDelegate.m in Sources */,
-				34E77A181C65C5FD00C3681D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +509,7 @@
 				34E77A451C65C5FD00C3681D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E77A461C65C5FD00C3681D /* Build configuration list for PBXNativeTarget "DaProSoLTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +518,7 @@
 				34E77A481C65C5FD00C3681D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E77A491C65C5FD00C3681D /* Build configuration list for PBXNativeTarget "DaProSoLUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +527,7 @@
 				34E77A4B1C65C5FD00C3681D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
