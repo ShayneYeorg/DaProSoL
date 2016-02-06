@@ -23,6 +23,8 @@
 		34E77A671C65C86E00C3681D /* DPSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A601C65C86E00C3681D /* DPSPlayer.m */; };
 		34E77A681C65C86E00C3681D /* DPSPlayerName.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A621C65C86E00C3681D /* DPSPlayerName.m */; };
 		34E77A6C1C65C90900C3681D /* DPSProbability.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A6B1C65C90900C3681D /* DPSProbability.m */; };
+		34E77A721C65CA1600C3681D /* DPShirt.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A6F1C65CA1600C3681D /* DPShirt.m */; };
+		34E77A731C65CA1600C3681D /* DPSTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E77A711C65CA1600C3681D /* DPSTestData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,11 @@
 		34E77A621C65C86E00C3681D /* DPSPlayerName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSPlayerName.m; sourceTree = "<group>"; };
 		34E77A6A1C65C90900C3681D /* DPSProbability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSProbability.h; sourceTree = "<group>"; };
 		34E77A6B1C65C90900C3681D /* DPSProbability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSProbability.m; sourceTree = "<group>"; };
+		34E77A6E1C65CA1600C3681D /* DPShirt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShirt.h; sourceTree = "<group>"; };
+		34E77A6F1C65CA1600C3681D /* DPShirt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShirt.m; sourceTree = "<group>"; };
+		34E77A701C65CA1600C3681D /* DPSTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSTestData.h; sourceTree = "<group>"; };
+		34E77A711C65CA1600C3681D /* DPSTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSTestData.m; sourceTree = "<group>"; };
+		34E77A741C65CA8400C3681D /* DPSConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +135,7 @@
 				34E77A4C1C65C6EA00C3681D /* Main */,
 				34E77A561C65C86E00C3681D /* Models */,
 				34E77A691C65C8BC00C3681D /* Tools */,
+				34E77A6D1C65CA0500C3681D /* Temp */,
 				34E77A161C65C5FD00C3681D /* Supporting Files */,
 			);
 			path = DaProSoL;
@@ -172,6 +180,7 @@
 				34E77A4F1C65C6EA00C3681D /* main.m */,
 				34E77A501C65C6EA00C3681D /* ViewController.h */,
 				34E77A511C65C6EA00C3681D /* ViewController.m */,
+				34E77A741C65CA8400C3681D /* DPSConstant.h */,
 			);
 			name = Main;
 			path = Main/Main;
@@ -205,6 +214,18 @@
 			);
 			name = Tools;
 			path = Main/Tools;
+			sourceTree = "<group>";
+		};
+		34E77A6D1C65CA0500C3681D /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				34E77A6E1C65CA1600C3681D /* DPShirt.h */,
+				34E77A6F1C65CA1600C3681D /* DPShirt.m */,
+				34E77A701C65CA1600C3681D /* DPSTestData.h */,
+				34E77A711C65CA1600C3681D /* DPSTestData.m */,
+			);
+			name = Temp;
+			path = Main/Temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,8 +362,10 @@
 				34E77A641C65C86E00C3681D /* DPSGoal.m in Sources */,
 				34E77A521C65C6EA00C3681D /* AppDelegate.m in Sources */,
 				34E77A531C65C6EA00C3681D /* main.m in Sources */,
+				34E77A731C65CA1600C3681D /* DPSTestData.m in Sources */,
 				34E77A671C65C86E00C3681D /* DPSPlayer.m in Sources */,
 				34E77A541C65C6EA00C3681D /* ViewController.m in Sources */,
+				34E77A721C65CA1600C3681D /* DPShirt.m in Sources */,
 				34E77A241C65C5FD00C3681D /* DaProSoL.xcdatamodeld in Sources */,
 				34E77A6C1C65C90900C3681D /* DPSProbability.m in Sources */,
 				34E77A681C65C86E00C3681D /* DPSPlayerName.m in Sources */,
