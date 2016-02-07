@@ -126,6 +126,12 @@
 - (void)playerAttack:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team against:(DPSClub *)againstTeam chances:(NSInteger)chances {
     if (chances == 0) return;
     
+    if (passer) {
+        DPSLog(@"%@传球给了%@", passer.name, player.name);
+    } else {
+        DPSLog(@"%@控制住了球",player.name);
+    }
+    
     for (int i=0; i<chances; i++) {
         player.touches += 1;
         if (player.aggressive >= [DPSProbability probability]) {
@@ -186,12 +192,14 @@
         
     } else {
         defender.tackleSuccess += 1;
+        DPSLog(@"%@抢断了%@的球", defender.name, player.name);
     }
 }
 
 - (void)defender:(DPSPlayer *)defender inTeam:(DPSClub *)team defendAgainstPasser:(DPSPlayer *)player inTeam:(DPSClub *)againstTeam {
     if([player defend]) {
         defender.tackleSuccess += 1;
+        DPSLog(@"%@抢断了%@的球", defender.name, player.name);
         
     } else {
         player.passeSuccess += 1;
@@ -200,21 +208,27 @@
 }
 
 - (void)player:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team shootAgainstGoalKeeper:(DPSPlayer *)goalKeeper {
+    DPSLog(@"%@射门！！", player.name);
     if([player shoot]) {
+        DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
         player.goals += 1;
         passer.asists += 1;
         [self goalBy:player passedBy:passer inTeam:team];
         
     } else {
+        DPSLog(@"%@阻挡了进球", goalKeeper.name);
         goalKeeper.saveSuccess += 1;
     }
 }
 
 - (void)goalKeeper:(DPSPlayer *)goalKeeper saveAgainstPlayer:(DPSPlayer *)player passer:(DPSPlayer *)passer inTeam:(DPSClub *)team {
+    DPSLog(@"%@射门！！", player.name);
     if ([goalKeeper save]) {
+        DPSLog(@"%@阻挡了进球", goalKeeper.name);
         goalKeeper.saveSuccess += 1;
         
     } else {
+        DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
         player.goals += 1;
         passer.asists += 1;
         [self goalBy:player passedBy:passer inTeam:team];
