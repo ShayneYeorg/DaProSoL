@@ -103,6 +103,48 @@
     return team;
 }
 
++ (DPSClub *)getMediumTeam2:(NSString *)teamName {
+    
+    DPSPlayer *GoalKeeper = [DPSTestData getMediumGoalKeeper:@"aGK" num:@"1"];
+    
+    DPSPlayer *Defender1 = [DPSTestData getMediumDefender:@"aD1" num:@"2"];
+    
+    DPSPlayer *Defender2 = [DPSTestData getMediumDefender:@"aD2" num:@"3"];
+    
+    DPSPlayer *Defender3 = [DPSTestData getMediumDefender:@"aD3" num:@"4"];
+    
+    DPSPlayer *Defender4 = [DPSTestData getMediumDefender:@"aD4" num:@"5"];
+    
+    DPSPlayer *Midefielder1 = [DPSTestData getMediumMidfielder:@"aM1" num:@"6"];
+    
+    DPSPlayer *Midefielder2 = [DPSTestData getMediumMidfielder:@"aM2" num:@"7"];
+    
+    DPSPlayer *Midefielder3 = [DPSTestData getMediumMidfielder:@"aM3" num:@"8"];
+    
+    DPSPlayer *Midefielder4 = [DPSTestData getMediumMidfielder:@"aM4" num:@"10"];
+    
+    DPSPlayer *Forward1 = [DPSTestData getMediumForward:@"aF1" num:@"9"];
+    
+    DPSPlayer *Forward2 = [DPSTestData getMediumForward:@"aF2" num:@"11"];
+    
+    DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                        teamName,@"name",
+                                                        GoalKeeper,@"goalKeeper",
+                                                        Defender1,@"defender1",
+                                                        Defender2,@"defender2",
+                                                        Defender3,@"defender3",
+                                                        Defender4,@"defender4",
+                                                        Midefielder1,@"midfielder1",
+                                                        Midefielder2,@"midfielder2",
+                                                        Midefielder3,@"midfielder3",
+                                                        Midefielder4,@"midfielder4",
+                                                        Forward1,@"forward1",
+                                                        Forward2,@"forward2",
+                                                        nil]];
+    
+    return team;
+}
+
 + (DPSClub *)getWeakTeam:(NSString *)teamName {
     
     DPSPlayer *GoalKeeper = [DPSTestData getWeakGoalKeeper:@"aGK" num:@"1"];

@@ -13,6 +13,7 @@
 
 + (DPSClub *)getStrongTeam:(NSString *)teamName;
 + (DPSClub *)getMediumTeam:(NSString *)teamName;
++ (DPSClub *)getMediumTeam2:(NSString *)teamName;
 + (DPSClub *)getWeakTeam:(NSString *)teamName;
 
 @end

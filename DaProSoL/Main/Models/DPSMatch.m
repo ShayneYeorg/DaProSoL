@@ -128,11 +128,12 @@
     
     if (passer) {
         DPSLog(@"%@传球给了%@", passer.name, player.name);
-    } else {
-        DPSLog(@"%@控制住了球",player.name);
     }
     
     for (int i=0; i<chances; i++) {
+        if (!passer) {
+            DPSLog(@"%@控制住了球",player.name);
+        }
         player.touches += 1;
         if (player.aggressive >= [DPSProbability probability]) {
             //shoot
@@ -203,14 +204,19 @@
         
     } else {
         player.passeSuccess += 1;
-        [self playerAttack:[team randomGetAPlayerKeepTheBallFrom:player] passedBy:player inTeam:team against:againstTeam chances:1];
+        [self playerAttack:[againstTeam randomGetAPlayerKeepTheBallFrom:player] passedBy:player inTeam:againstTeam against:team chances:1];
     }
 }
 
 - (void)player:(DPSPlayer *)player passedBy:(DPSPlayer *)passer inTeam:(DPSClub *)team shootAgainstGoalKeeper:(DPSPlayer *)goalKeeper {
     DPSLog(@"%@射门！！", player.name);
     if([player shoot]) {
-        DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
+        if (passer) {
+            DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
+            
+        } else {
+            DPSLog(@"%@进球", player.name);
+        }
         player.goals += 1;
         passer.asists += 1;
         [self goalBy:player passedBy:passer inTeam:team];
@@ -228,7 +234,12 @@
         goalKeeper.saveSuccess += 1;
         
     } else {
-        DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
+        if (passer) {
+            DPSLog(@"%@进球，助攻者是%@", player.name, passer.name);
+            
+        } else {
+            DPSLog(@"%@进球", player.name);
+        }
         player.goals += 1;
         passer.asists += 1;
         [self goalBy:player passedBy:passer inTeam:team];
