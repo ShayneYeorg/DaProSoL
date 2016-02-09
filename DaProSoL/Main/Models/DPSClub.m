@@ -87,22 +87,22 @@
 }
 
 - (DPSPlayer *)randomGetADefender {
-    NSInteger num = [DPSProbability probability0to:3];
+    NSInteger num = [DPSProbability probability1to:4];
     DPSPlayer *player = [[DPSPlayer alloc]init];
     switch (num) {
-        case 0:
+        case 1:
             player = self.defender1;
             break;
             
-        case 1:
+        case 2:
             player = self.defender2;
             break;
             
-        case 2:
+        case 3:
             player = self.defender3;
             break;
             
-        case 3:
+        case 4:
             player = self.defender4;
             break;
     }
@@ -110,22 +110,22 @@
 }
 
 - (DPSPlayer *)randomGetAMidfielder {
-    NSInteger num = [DPSProbability probability0to:3];
+    NSInteger num = [DPSProbability probability1to:4];
     DPSPlayer *player = [[DPSPlayer alloc]init];
     switch (num) {
-        case 0:
+        case 1:
             player = self.midfielder1;
             break;
             
-        case 1:
+        case 2:
             player = self.midfielder2;
             break;
             
-        case 2:
+        case 3:
             player = self.midfielder3;
             break;
             
-        case 3:
+        case 4:
             player = self.midfielder4;
             break;
     }
@@ -133,14 +133,14 @@
 }
 
 - (DPSPlayer *)randomGetAForward {
-    NSInteger num = [DPSProbability probability0to:1];
+    NSInteger num = [DPSProbability probability1to:2];
     DPSPlayer *player = [[DPSPlayer alloc]init];
     switch (num) {
-        case 0:
+        case 1:
             player = self.forward1;
             break;
             
-        case 1:
+        case 2:
             player = self.forward2;
             break;
     }

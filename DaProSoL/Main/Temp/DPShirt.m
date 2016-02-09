@@ -35,17 +35,17 @@
 //        self.backgroundColor = [UIColor grayColor];
         
         
-        _color1R = [DPSProbability probability0to:255];
-        _color1G = [DPSProbability probability0to:255];
-        _color1B = [DPSProbability probability0to:255];
-        
-        _color2R = [DPSProbability probability0to:255];
-        _color2G = [DPSProbability probability0to:255];
-        _color2B = [DPSProbability probability0to:255];
-        
-        _color3R = [DPSProbability probability0to:255];
-        _color3G = [DPSProbability probability0to:255];
-        _color3B = [DPSProbability probability0to:255];
+//        _color1R = [DPSProbability probability0to:255];
+//        _color1G = [DPSProbability probability0to:255];
+//        _color1B = [DPSProbability probability0to:255];
+//        
+//        _color2R = [DPSProbability probability0to:255];
+//        _color2G = [DPSProbability probability0to:255];
+//        _color2B = [DPSProbability probability0to:255];
+//        
+//        _color3R = [DPSProbability probability0to:255];
+//        _color3G = [DPSProbability probability0to:255];
+//        _color3B = [DPSProbability probability0to:255];
         
 //        _color1R = 32;
 //        _color1G = 171;
@@ -121,9 +121,9 @@
 }
 
 - (void)configColumnBarBody {
-    NSInteger color4R = [DPSProbability probability0to:255];
-    NSInteger color4G = [DPSProbability probability0to:255];
-    NSInteger color4B = [DPSProbability probability0to:255];
+    NSInteger color4R = [DPSProbability probability1to:255];
+    NSInteger color4G = [DPSProbability probability1to:255];
+    NSInteger color4B = [DPSProbability probability1to:255];
     
     //一条16宽
     UIView *body1 = [[UIView alloc]initWithFrame:CGRectMake(140, 100, 16, 105)];

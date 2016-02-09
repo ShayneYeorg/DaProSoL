@@ -136,6 +136,9 @@
         }
         player.touches += 1;
         if (player.aggressive >= [DPSProbability probability]) {
+            
+            
+            
             //shoot
             player.shoots += 1;
             againstTeam.goalKeeper.saves += 1;
@@ -272,12 +275,10 @@
 }
 
 - (NSString *)goalTime {
-    NSInteger min = [DPSProbability probability0to:95];
-    if (min == 0) {
+    NSInteger min = [DPSProbability probability1to:96];
+    if (min > 91 && min <= 93) {
         return @"45'+";
-    } else if (min > 90 && min <= 92) {
-        return @"45'+";
-    } else if (min > 92 && min <= 95) {
+    } else if (min > 93 && min <= 96) {
         return @"90'+";
     }
     

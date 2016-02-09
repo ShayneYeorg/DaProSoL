@@ -11,15 +11,15 @@
 @implementation DPSProbability
 
 + (NSInteger)probability {
-    return (arc4random()%100);
+    return (arc4random()%100 + 1);
 }
 
-+ (NSInteger)probability0to:(NSInteger)n {
-    return (arc4random()%n);
++ (NSInteger)probability1to:(NSInteger)n {
+    return (arc4random()%n + 1);
 }
 
-+ (NSInteger)probability0To110 {
-    return (arc4random()%111);
++ (NSInteger)probability1To111 {
+    return (arc4random()%111 + 1);
 }
 
 @end
