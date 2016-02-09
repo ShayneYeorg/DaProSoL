@@ -21,27 +21,27 @@
 
 + (DPSClub *)getStrongTeam:(NSString *)teamName {
     
-    DPSPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"GK" num:@"1"];
+    DPSPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"hGK" num:@"1"];
     
-    DPSPlayer *Defender1 = [DPSTestData getStrongDefender:@"D1" num:@"2"];
+    DPSPlayer *Defender1 = [DPSTestData getStrongDefender:@"hD1" num:@"2"];
     
-    DPSPlayer *Defender2 = [DPSTestData getStrongDefender:@"D2" num:@"3"];
+    DPSPlayer *Defender2 = [DPSTestData getStrongDefender:@"hD2" num:@"3"];
     
-    DPSPlayer *Defender3 = [DPSTestData getStrongDefender:@"D3" num:@"4"];
+    DPSPlayer *Defender3 = [DPSTestData getStrongDefender:@"hD3" num:@"4"];
     
-    DPSPlayer *Defender4 = [DPSTestData getStrongDefender:@"D4" num:@"5"];
+    DPSPlayer *Defender4 = [DPSTestData getStrongDefender:@"hD4" num:@"5"];
     
-    DPSPlayer *Midefielder1 = [DPSTestData getStrongMidfielder:@"M1" num:@"6"];
+    DPSPlayer *Midefielder1 = [DPSTestData getStrongMidfielder:@"hM1" num:@"6"];
     
-    DPSPlayer *Midefielder2 = [DPSTestData getStrongMidfielder:@"M2" num:@"7"];
+    DPSPlayer *Midefielder2 = [DPSTestData getStrongMidfielder:@"hM2" num:@"7"];
     
-    DPSPlayer *Midefielder3 = [DPSTestData getStrongMidfielder:@"M3" num:@"8"];
+    DPSPlayer *Midefielder3 = [DPSTestData getStrongMidfielder:@"hM3" num:@"8"];
     
-    DPSPlayer *Midefielder4 = [DPSTestData getStrongMidfielder:@"M4" num:@"10"];
+    DPSPlayer *Midefielder4 = [DPSTestData getStrongMidfielder:@"hM4" num:@"10"];
     
-    DPSPlayer *Forward1 = [DPSTestData getStrongForward:@"F1" num:@"9"];
+    DPSPlayer *Forward1 = [DPSTestData getStrongForward:@"hF1" num:@"9"];
     
-    DPSPlayer *Forward2 = [DPSTestData getStrongForward:@"F2" num:@"11"];
+    DPSPlayer *Forward2 = [DPSTestData getStrongForward:@"hF2" num:@"11"];
     
     DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
                                                       teamName,@"name",
@@ -57,6 +57,48 @@
                                                       Forward1,@"forward1",
                                                       Forward2,@"forward2",
                                                       nil]];
+    
+    return team;
+}
+
++ (DPSClub *)getStrongTeam2:(NSString *)teamName {
+    
+    DPSPlayer *GoalKeeper = [DPSTestData getStrongGoalKeeper:@"aGK" num:@"1"];
+    
+    DPSPlayer *Defender1 = [DPSTestData getStrongDefender:@"aD1" num:@"2"];
+    
+    DPSPlayer *Defender2 = [DPSTestData getStrongDefender:@"aD2" num:@"3"];
+    
+    DPSPlayer *Defender3 = [DPSTestData getStrongDefender:@"aD3" num:@"4"];
+    
+    DPSPlayer *Defender4 = [DPSTestData getStrongDefender:@"aD4" num:@"5"];
+    
+    DPSPlayer *Midefielder1 = [DPSTestData getStrongMidfielder:@"aM1" num:@"6"];
+    
+    DPSPlayer *Midefielder2 = [DPSTestData getStrongMidfielder:@"aM2" num:@"7"];
+    
+    DPSPlayer *Midefielder3 = [DPSTestData getStrongMidfielder:@"aM3" num:@"8"];
+    
+    DPSPlayer *Midefielder4 = [DPSTestData getStrongMidfielder:@"aM4" num:@"10"];
+    
+    DPSPlayer *Forward1 = [DPSTestData getStrongForward:@"aF1" num:@"9"];
+    
+    DPSPlayer *Forward2 = [DPSTestData getStrongForward:@"aF2" num:@"11"];
+    
+    DPSClub *team = [[DPSClub alloc]initWithPlayerDict:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                        teamName,@"name",
+                                                        GoalKeeper,@"goalKeeper",
+                                                        Defender1,@"defender1",
+                                                        Defender2,@"defender2",
+                                                        Defender3,@"defender3",
+                                                        Defender4,@"defender4",
+                                                        Midefielder1,@"midfielder1",
+                                                        Midefielder2,@"midfielder2",
+                                                        Midefielder3,@"midfielder3",
+                                                        Midefielder4,@"midfielder4",
+                                                        Forward1,@"forward1",
+                                                        Forward2,@"forward2",
+                                                        nil]];
     
     return team;
 }
@@ -197,7 +239,7 @@
                                           @"5", @"shootAbility",
                                           @"40", @"passAbility",
                                           @"0", @"defendAbility",
-                                          @"81", @"saveAbility",
+                                          @"80", @"saveAbility",
                                           nil]];
 }
 

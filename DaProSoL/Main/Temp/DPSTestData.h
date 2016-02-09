@@ -12,6 +12,7 @@
 @interface DPSTestData : NSObject
 
 + (DPSClub *)getStrongTeam:(NSString *)teamName;
++ (DPSClub *)getStrongTeam2:(NSString *)teamName;
 + (DPSClub *)getMediumTeam:(NSString *)teamName;
 + (DPSClub *)getMediumTeam2:(NSString *)teamName;
 + (DPSClub *)getWeakTeam:(NSString *)teamName;
