@@ -37,9 +37,9 @@
 - (DPSPlayer *)randomGetAPlayerAgainstGoalKeeper {
     DPSPlayer *player;
     NSInteger pb = [DPSProbability probability];
-    if (pb < 80) {
+    if (pb <= 80) {
         player = [self randomGetAForward];
-    } else if (pb < 90) {
+    } else if (pb <= 90) {
         player = [self randomGetAMidfielder];
     } else {
         player = [self randomGetADefender];
@@ -50,9 +50,9 @@
 - (DPSPlayer *)randomGetAPlayerAgainstDefender {
     DPSPlayer *player;
     NSInteger pb = [DPSProbability probability];
-    if (pb < 70) {
+    if (pb <= 70) {
         player = [self randomGetAMidfielder];
-    } else if (pb < 80) {
+    } else if (pb <= 80) {
         player = [self randomGetAForward];
     } else {
         player = [self randomGetADefender];
@@ -63,9 +63,9 @@
 - (DPSPlayer *)randomGetAPlayerAgainstMidfielder {
     DPSPlayer *player;
     NSInteger pb = [DPSProbability probability];
-    if (pb < 70) {
+    if (pb <= 70) {
         player = [self randomGetADefender];
-    } else if (pb < 90) {
+    } else if (pb <= 90) {
         player = [self randomGetAMidfielder];
     } else {
         player = [self randomGetAForward];
@@ -76,9 +76,9 @@
 - (DPSPlayer *)randomGetAPlayerAgainstForward {
     DPSPlayer *player;
     NSInteger pb = [DPSProbability probability];
-    if (pb < 70) {
+    if (pb <= 70) {
         player = [self randomGetADefender];
-    } else if (pb < 95) {
+    } else if (pb <= 95) {
         player = [self randomGetAMidfielder];
     } else {
         player = [self randomGetAForward];
@@ -166,9 +166,9 @@
 - (DPSPlayer *)randomGetAPlayerKeepTheBallFromGoalkeeper {
     NSInteger num = [DPSProbability probability];
     DPSPlayer *player;
-    if (num < 40) {
+    if (num <= 40) {
         player = [self randomGetADefender];
-    } else if (num < 90) {
+    } else if (num <= 90) {
         player = [self randomGetAMidfielder];
     } else {
         player = [self randomGetAForward];
@@ -179,9 +179,9 @@
 - (DPSPlayer *)randomGetAPlayerKeepTheBallFromDefender {
     NSInteger num = [DPSProbability probability];
     DPSPlayer *player;
-    if (num < 60) {
+    if (num <= 60) {
         player = [self randomGetAMidfielder];
-    } else if (num < 80) {
+    } else if (num <= 80) {
         player = [self randomGetADefender];
     } else {
         player = [self randomGetAForward];
@@ -192,9 +192,9 @@
 - (DPSPlayer *)randomGetAPlayerKeepTheBallFromMidfielder {
     NSInteger num = [DPSProbability probability];
     DPSPlayer *player;
-    if (num < 45) {
+    if (num <= 45) {
         player = [self randomGetAMidfielder];
-    } else if (num < 90) {
+    } else if (num <= 90) {
         player = [self randomGetADefender];
     } else {
         player = [self randomGetAForward];
@@ -205,9 +205,9 @@
 - (DPSPlayer *)randomGetAPlayerKeepTheBallFromForward {
     NSInteger num = [DPSProbability probability];
     DPSPlayer *player;
-    if (num < 60) {
+    if (num <= 60) {
         player = [self randomGetADefender];
-    } else if (num < 90) {
+    } else if (num <= 90) {
         player = [self randomGetAMidfielder];
     } else {
         player = [self randomGetAForward];

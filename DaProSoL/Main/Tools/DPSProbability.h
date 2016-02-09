@@ -12,7 +12,7 @@
 
 + (NSInteger)probability;
 
-//返回0到n的任意整数
+//返回1到n的任意整数
 + (NSInteger)probability1to:(NSInteger)n;
 
 //只供DPSPlayerName使用

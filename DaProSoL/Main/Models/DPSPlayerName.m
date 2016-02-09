@@ -71,57 +71,57 @@ static id _instance;
 
 - (NSString *)nameStyleString {
     NSInteger prob = [DPSProbability probability1To111];
-    if (prob < 6) {
+    if (prob <= 6) {
         return @"ZS";
-    } else if (prob < 12) {
+    } else if (prob <= 12) {
         return @"Zs";
-    } else if (prob < 18) {
+    } else if (prob <= 18) {
         return @"ZZS";
-    } else if (prob < 24) {
+    } else if (prob <= 24) {
         return @"ZZs";
-    } else if (prob < 30) {
+    } else if (prob <= 30) {
         return @"ZZSZ";
-    } else if (prob < 36) {
+    } else if (prob <= 36) {
         return @"ZZsZ";
-    } else if (prob < 42) {
+    } else if (prob <= 42) {
         return @"ZSZZ";
-    } else if (prob < 48) {
+    } else if (prob <= 48) {
         return @"ZsZZ";
-    } else if (prob < 54) {
+    } else if (prob <= 54) {
         return @"ZSZS";
-    } else if (prob < 60) {
+    } else if (prob <= 60) {
         return @"ZsZs";
-    } else if (prob < 66) {
+    } else if (prob <= 66) {
         return @"ZSZZS";
-    } else if (prob < 72) {
+    } else if (prob <= 72) {
         return @"ZsZZs";
-    } else if (prob < 78) {
+    } else if (prob <= 78) {
         return @"ZSZZs";
-    } else if (prob < 84) {
+    } else if (prob <= 84) {
         return @"ZsZZS";
     }
-    else if (prob < 88) {
+    else if (prob <= 88) {
         return @"ZZ";
-    } else if (prob < 92) {
+    } else if (prob <= 92) {
         return @"ZSZ";
-    } else if (prob < 96) {
+    } else if (prob <= 96) {
         return @"ZsZ";
-    } else if (prob < 100) {
+    } else if (prob <= 100) {
         return @"ZZZS";
-    } else if (prob < 104) {
+    } else if (prob <= 104) {
         return @"ZZZs";
     }
-    else if (prob == 104) {
+    else if (prob == 105) {
         return @"ZZZ";
-    } else if (prob == 105) {
-        return @"SZZ";
     } else if (prob == 106) {
-        return @"SZSZ";
+        return @"SZZ";
     } else if (prob == 107) {
-        return @"SZZS";
+        return @"SZSZ";
     } else if (prob == 108) {
-        return @"ZZSZS";
+        return @"SZZS";
     } else if (prob == 109) {
+        return @"ZZSZS";
+    } else if (prob == 110) {
         return @"ZSZSZS";
     } else {
         return @"ZSZSZs";

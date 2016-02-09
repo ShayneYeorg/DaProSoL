@@ -144,7 +144,7 @@
             againstTeam.goalKeeper.saves += 1;
             if (player.shootAbility >= againstTeam.goalKeeper.saveAbility) {
                 //depend on the shooter
-                if (player.shootAbility+1 > 99-againstTeam.goalKeeper.saveAbility) {
+                if (player.shootAbility >= 100-againstTeam.goalKeeper.saveAbility) {
                     [self player:player passedBy:passer inTeam:team shootAgainstGoalKeeper:againstTeam.goalKeeper];
                     
                 } else {
@@ -153,7 +153,7 @@
                 
             } else {
                 //depend on the saver
-                if (againstTeam.goalKeeper.saveAbility+1 > 99-player.shootAbility) {
+                if (againstTeam.goalKeeper.saveAbility >= 100-player.shootAbility) {
                     [self goalKeeper:againstTeam.goalKeeper saveAgainstPlayer:player passer:passer inTeam:team];
                     
                 } else {
@@ -168,7 +168,7 @@
             defender.tackles += 1;
             if (player.passAbility >= defender.defendAbility) {
                 //depend on the passer
-                if (player.passAbility+1 > 99-defender.defendAbility) {
+                if (player.passAbility >= 100-defender.defendAbility) {
                     [self player:player inTeam:team passAgainstDefender:defender inTeam:againstTeam];
                     
                 } else {
@@ -177,7 +177,7 @@
                 
             } else {
                 //depend on the defender
-                if (defender.defendAbility+1 > 99-player.passAbility) {
+                if (defender.defendAbility >= 100-player.passAbility) {
                     [self defender:defender inTeam:againstTeam defendAgainstPasser:player inTeam:team];
                     
                 } else {
@@ -276,9 +276,9 @@
 
 - (NSString *)goalTime {
     NSInteger min = [DPSProbability probability1to:96];
-    if (min > 91 && min <= 93) {
+    if (min >= 91 && min <= 93) {
         return @"45'+";
-    } else if (min > 93 && min <= 96) {
+    } else if (min >= 94 && min <= 96) {
         return @"90'+";
     }
     
